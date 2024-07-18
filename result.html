@@ -1,0 +1,1901 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
+    <!-- css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+
+    <title>Trekka</title>
+     <style>
+     @media only screen and (max-width: 767px) {
+        .img_crs {
+          width:300% !important;
+        }
+        
+        .txt_crs {
+            font-size:43px !important;
+        }
+        
+        .contact-us{
+            margin-top:1rem;
+            text-align: center !important;
+        }
+        
+        .med-sos{
+            text-align: center !important;
+        }
+        
+        }
+        
+        body{
+            position: relative;
+            font-family: 'Exo 2', sans-serif;
+        }
+        
+        .bg-secondary{
+        background-color: #246d8e !important;
+        }
+        
+            
+        .btn-login{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+        .col-signup {
+            margin-top: 0.5rem;
+        }
+    
+        .col-lastname{
+            margin-top:0.5rem;
+        }
+        
+        .nav_links {
+          color: white;
+        }
+        
+    </style>
+  </head>
+  <body>
+
+<div class="wrapper">
+    <!-- header -->
+      <header class="header">
+            <!--<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">-->
+              <nav class="navbar fixed-top navbar-expand-lg p-md-3" style="">
+                <div class="container1 container">
+                <a class="navbar-brand" href="/">
+                    <img class="logo" src="img/logo_baru_1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav_links px-4" href="/about_us.html">About Us</a>
+                    <a class="nav-link nav_links px-4" href="/races.html">Races</a>
+                    <a class="nav-link nav_links px-4" href="/program.html">Programs</a>
+                    <a class="nav-link nav_links px-4" href="/community.html">Community</a>
+                    <!-- <a class="nav-link text-dark px-4" href="/shop.html">Store</a> -->
+                    </div>
+                    <form class="d-flex">
+                      <button type="button" class="btn-login btn text-white" data-bs-toggle="modal" data-bs-target="#modalLogin" style="background-color:#072745;">Login</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="">
+            <div class="container">
+              <a class="navbar-brand" href="/">
+                <img class="logo" src="img/logo.png" alt="">
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/races.html">Races</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Membership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/shop.html">Shop</a>
+                  </li>
+                   <form class="d-flex">
+                    <button class="btn text-white" type="submit" style="background-color:#072745;">Join Now</button>
+                  </form>
+                </ul>
+              </div>
+            </div>
+          </nav> -->
+
+    <!-- banner content-->
+    <div class="carousel-container">
+        <div id="carouselExampleSlideOnly" class="carousel1 carousel slide" data-ride="carousel">
+               <div class="carousel-inner" style=" min-width: 100%;height: 400px;">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="img/peak.jpg"
+                            style=" min-width: 100%;height: 400px;">
+                            <div class="carousel-caption" style="top:130px !important">
+                              <h5 class="animated fadeInDown" style="animation-delay: 1s">Time Result</h5>
+                              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- <div class="home-header">
+    <div class="video-container">
+        <video class="video2 video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/1.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="header-text">
+        <img class="text1" src="img/logo-white.png" style="height: 200px;"><h1>HALO</h1>
+    </div>
+</div> -->
+<!--Content-->
+    	<main class="page">
+
+				<div class="container" style="padding-bottom:40px;">
+					<div class="block-heading">
+						<h2 class="text-info">
+							<span class="text-white">
+								Entry
+							</span>
+							<span style="color:white !important">
+								<strong>
+									List
+								</strong>
+							</span>
+						</h2>
+						<p class="text-white">
+
+						</p>
+					</div>
+
+                	<div class="block-content">
+						<div class="row justify-content-center">
+							<div class="col-md-12 ">
+
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs">
+									<li class="nav-item">
+										<a class="nav-link active" data-bs-toggle="tab" data-bs-target="#solo">
+											<b>
+												Solo 50K
+											</b>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-bs-toggle="tab" data-bs-target="#relay2">
+											<b>
+												Relay 2 50K 
+											</b>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-bs-toggle="tab" data-bs-target="#relay4">
+											<b>
+												Relay 4 50K
+											</b>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-bs-toggle="tab" data-bs-target="#relay8">
+											<b>
+												Relay 8 50K
+											</b>
+										</a>
+									</li>
+								</ul>
+
+								<div class="tab-content">
+									<div id="solo" class="container tab-pane active">
+										<br>
+										<table id="tbl-but-80" class="table table-striped table-bordered dt-responsive tbl-but" style="width:100%">
+												<thead>
+												<tr>
+												    <th>
+														Rank
+													</th>
+													<th>
+														Bib Number
+													</th>
+													<th>
+														Name
+													</th>
+													<th>
+													    Category
+													</th>
+													<th>
+													    Gender
+													</th>
+													<th>
+														Time
+													</th>
+													<th>
+														Description
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+                                                    <td>1 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>1721</td>
+                                                    <td>Sobiri Haerudin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>6:57:20</td>
+                                                    <td>Podium 1 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>1720</td>
+                                                    <td>Sobari herdiana</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>7:00:07</td>
+                                                    <td>Podium 2 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>1723</td>
+                                                    <td>Taofik Hidayat</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>7:19:38</td>
+                                                    <td>Podium 3 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>1702</td>
+                                                    <td>Alan MAULANA</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>7:31:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td> 
+                                                    <td>1017</td>
+                                                    <td>Hendra Siswanto</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>7:57:49</td>
+                                                    <td>Podium 1 master male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>1039</td>
+                                                    <td>Wahyu Rizki Azmi</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>9:26:35</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>1715</td>
+                                                    <td>Ruth Theresia</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>9:42:30</td>
+                                                    <td>Podium 1 female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>1011</td>
+                                                    <td>Eko Satrio Pramono</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>9:49:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>1719</td>
+                                                    <td>Slamet Riyadi</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>9:51:35</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>1029</td>
+                                                    <td>Novita Wulandari</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>10:14:00</td>
+                                                    <td>Podium 2 female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>1410</td>
+                                                    <td>Zeni Muhyidin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>10:19:00</td>
+                                                    <td>Podium 2 master male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>1019</td>
+                                                    <td>Indah Junita</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>10:19:00</td>
+                                                    <td>Podium 3 female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>1022</td>
+                                                    <td>M. Zamrudin Solichin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>10:42:00</td>
+                                                    <td>Podium 3 master male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>1718</td>
+                                                    <td>Sianti Candra</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>10:43:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>1013</td>
+                                                    <td>Frans Edison</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>10:58:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>1026</td>
+                                                    <td>Mochamad Soleh</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:25:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>1028</td>
+                                                    <td>Noorman Hikmawan</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:25:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>1404</td>
+                                                    <td>Jo Astra</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:31:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>1027</td>
+                                                    <td>Muhamad Suhud</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:36:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>1401</td>
+                                                    <td>Budiman Setiono</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:50:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>1036</td>
+                                                    <td>Syahlendra Syafri</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:54:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>1407</td>
+                                                    <td>Takdim</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>11:54:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>1020</td>
+                                                    <td>Koko Sondaka</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>12:38:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>1007</td>
+                                                    <td>Berta Hernovianto</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>12:45:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>1402</td>
+                                                    <td>COKRO SUMARNO</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>13:05:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26 <i class="fa-solid fa-trophy" style="color:#FFFF00"></i></td>
+                                                    <td>1031</td>
+                                                    <td>Nurul Wulandari</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>13:28:00</td>
+                                                    <td>Podium 1 master female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>1010</td>
+                                                    <td>Dyan Faksilanto</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:11:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>1406</td>
+                                                    <td>Kuba Kuswono</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:11:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>1713</td>
+                                                    <td>N. Darmayoga</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:12:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>1709</td>
+                                                    <td>Hanifah Putri Suci Haryoko</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>15:13:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>1035</td>
+                                                    <td>Ruby Arrevianto</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:33:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>1705</td>
+                                                    <td>fanny mohammad fahruddin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:39:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>33</td>
+                                                    <td>1003</td>
+                                                    <td>Arief Faizal</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:46:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34</td>
+                                                    <td>1032</td>
+                                                    <td>Rahmat Palastyono</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:46:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35</td>
+                                                    <td>1015</td>
+                                                    <td>Hadi Prasojo</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:47:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36</td>
+                                                    <td>1717</td>
+                                                    <td>Salmond Pilima</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>16:03:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>37</td>
+                                                    <td>1030</td>
+                                                    <td>Nurita Handayani</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td>16:04:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>38</td>
+                                                    <td>1710</td>
+                                                    <td>Hilman Solehudin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>17:04:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>39</td>
+                                                    <td>1021</td>
+                                                    <td>Lucky Ginanjar Adhipurna</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>17:05:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40</td>
+                                                    <td>1025</td>
+                                                    <td>Mino.B.Sapiie</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>17:05:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>41</td>
+                                                    <td>1005</td>
+                                                    <td>Azhari Fauzi</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42</td>
+                                                    <td>1006</td>
+                                                    <td>Bagus Nugroho</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>43</td>
+                                                    <td>1008</td>
+                                                    <td>Dadik Gautama</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>44</td>
+                                                    <td>1009</td>
+                                                    <td>Dany Sukarsa</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45</td>
+                                                    <td>1012</td>
+                                                    <td>Fadjar Tarigan</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>46</td>
+                                                    <td>1014</td>
+                                                    <td>Fransiscus Alelo</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td>15:40:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>47</td>
+                                                    <td>1018</td>
+                                                    <td>Hendrik G Suryadi</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>48</td>
+                                                    <td>1023</td>
+                                                    <td>Maulana Yudhistira</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>49</td>
+                                                    <td>1033</td>
+                                                    <td>Resito ari fersidi</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>50</td>
+                                                    <td>1034</td>
+                                                    <td>Reza Syafrudin</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>51</td>
+                                                    <td>1037</td>
+                                                    <td>Vallery Voantris</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>52</td>
+                                                    <td>1408</td>
+                                                    <td>Theresia achmad djohan</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>53</td>
+                                                    <td>1409</td>
+                                                    <td>Yusup Yogantara</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>54</td>
+                                                    <td>1703</td>
+                                                    <td>BAYUNG AROFFA</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>55</td>
+                                                    <td>1706</td>
+                                                    <td>Fauziah</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>56</td>
+                                                    <td>1716</td>
+                                                    <td>salam</td>
+                                                    <td>Solo</td>
+                                                    <td>M</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>57</td>
+                                                    <td>1722</td>
+                                                    <td>SUKMA HERMAWATI</td>
+                                                    <td>Solo</td>
+                                                    <td>F</td>
+                                                    <td></td>
+                                                    <td>DNF</td>
+                                                </tr>
+											</tbody>
+
+										</table>
+									</div>
+									<div id="relay2" class="container tab-pane">
+										<br>
+										<table id="tbl-but-50" class="table table-striped table-bordered dt-responsive tbl-but" style="width:100%">
+												<thead>
+												<tr>
+												    <th>
+														Rank
+													</th>
+													<th>
+														Bib Number
+													</th>
+													<th>
+														Name
+													</th>
+													<th>
+													    Category
+													</th>
+													<th>
+														Time
+													</th>
+													<th>
+													    Description
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												 <tr>
+                                                    <td>1 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>2722</td>
+                                                    <td>Senema sport</td>
+                                                    <td>R2</td>
+                                                    <td>7:01:55</td>
+                                                    <td>Podium 1 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>2732</td>
+                                                    <td>Escape runners</td>
+                                                    <td>R2</td>
+                                                    <td>7:41:39</td>
+                                                    <td>Podium 2 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>2051</td>
+                                                    <td>Duracel Phoenix</td>
+                                                    <td>R2</td>
+                                                    <td>11:48:00</td>
+                                                    <td>Podium 1 mix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>2741</td>
+                                                    <td>Escape</td>
+                                                    <td>R2</td>
+                                                    <td>12:06:00</td>
+                                                    <td>Podium 1 female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>2012</td>
+                                                    <td>90Brave</td>
+                                                    <td>R2</td>
+                                                    <td>12:49:00</td>
+                                                    <td>Podium 3 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>2081</td>
+                                                    <td>R2 Laskar ITB 79</td>
+                                                    <td>R2</td>
+                                                    <td>12:52:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>2112</td>
+                                                    <td>Markimon2</td>
+                                                    <td>R2</td>
+                                                    <td>12:54:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>2101</td>
+                                                    <td>UKSS EWAKO</td>
+                                                    <td>R2</td>
+                                                    <td>13:04:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>2042</td>
+                                                    <td>Duracel Aquila</td>
+                                                    <td>R2</td>
+                                                    <td>13:38:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>2031</td>
+                                                    <td>JALAK 87</td>
+                                                    <td>R2</td>
+                                                    <td>13:47:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>2142</td>
+                                                    <td>Beukicot R2</td>
+                                                    <td>R2</td>
+                                                    <td>13:45:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>2712</td>
+                                                    <td>Couplerun</td>
+                                                    <td>R2</td>
+                                                    <td>14:12:00</td>
+                                                    <td>Podium 2 mix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>2092</td>
+                                                    <td>Code Runner</td>
+                                                    <td>R2</td>
+                                                    <td>15:12:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>2062</td>
+                                                    <td>ELEKTRAIL</td>
+                                                    <td>R2</td>
+                                                    <td>15:31:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>2072</td>
+                                                    <td>Code Runner A</td>
+                                                    <td>R2</td>
+                                                    <td>15:39:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>2132</td>
+                                                    <td>Junior-nya Kuch Senior Bi96oys ISBI</td>
+                                                    <td>R2</td>
+                                                    <td>17:03:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>2022</td>
+                                                    <td>CCAR Runners</td>
+                                                    <td>R2</td>
+                                                    <td>17:35:00</td>
+                                                    <td>DNF</td>
+                                                </tr>
+											</tbody>
+
+										</table>
+									</div>
+									<div id="relay4" class="container tab-pane">
+										<br>
+										<table id="tbl-but-33" class="table table-striped table-bordered dt-responsive tbl-but" style="width:100%">
+											<thead>
+												<tr>
+												    <th>
+														Rank
+													</th>
+													<th>
+														Bib Number
+													</th>
+													<th>
+														Name
+													</th>
+													<th>
+													    Category
+													</th>
+													<th>
+													    Gender
+													</th>
+													<th>
+														Time
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+											<tr>
+                                                <td>1 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                <td>4190</td>
+                                                <td>Run4Masjid Segar</td>
+                                                <td>R4</td>
+                                                <td>7:02:16</td>
+                                                <td>Podium 1 male</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2 <i class="fa-solid fa-trophy" style="color:#FF0000"></i></td>
+                                                <td>4170</td>
+                                                <td>Duracel Leo</td>
+                                                <td>R4</td>
+                                                <td>7:17:20</td>
+                                                <td>Ganti peserta (n/e podium)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                <td>4210</td>
+                                                <td>Duracel Pegasus</td>
+                                                <td>R4</td>
+                                                <td>7:19:34</td>
+                                                <td>Podium 2 male</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                <td>4070</td>
+                                                <td>GARILARI x GRYFFINDOR</td>
+                                                <td>R4</td>
+                                                <td>7:25:22</td>
+                                                <td>Podium 1 mix</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                <td>4160</td>
+                                                <td>Srikandi 98</td>
+                                                <td>R4</td>
+                                                <td>7:29:55</td>
+                                                <td>Podium 1 female</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                <td>4230</td>
+                                                <td>Jatayu 87</td>
+                                                <td>R4</td>
+                                                <td>7:33:05</td>
+                                                <td>Podium 3 male</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                <td>4100</td>
+                                                <td>Laskar ITB79-R4 A</td>
+                                                <td>R4</td>
+                                                <td>7:45:51</td>
+                                                <td>Podium 2 mix</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 <i class="fa-solid fa-trophy" style="color:#FF0000"></i></td>
+                                                <td>4080</td>
+                                                <td>GARILARI x SLYTHERIN</td>
+                                                <td>R4</td>
+                                                <td>7:50:00</td>
+                                                <td>Ganti peserta (n/e podium)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                <td>4120</td>
+                                                <td>BeukiCot R4-1</td>
+                                                <td>R4</td>
+                                                <td>7:52:42</td>
+                                                <td>Podium 3 mix</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>4110</td>
+                                                <td>ALBATROS 87</td>
+                                                <td>R4</td>
+                                                <td>7:55:49</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>4140</td>
+                                                <td>90Strong</td>
+                                                <td>R4</td>
+                                                <td>7:58:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>4050</td>
+                                                <td>Elang87</td>
+                                                <td>R4</td>
+                                                <td>8:06:07</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>4260</td>
+                                                <td>Tim Panca</td>
+                                                <td>R4</td>
+                                                <td>8:13:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>4030</td>
+                                                <td>CodeRunners R4</td>
+                                                <td>R4</td>
+                                                <td>8:19:21</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>4150</td>
+                                                <td>Alam Segar</td>
+                                                <td>R4</td>
+                                                <td>8:31:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>4250</td>
+                                                <td>81XFR BANDROS</td>
+                                                <td>R4</td>
+                                                <td>8:31:41</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td>4180</td>
+                                                <td>Beukicot R4-2</td>
+                                                <td>R4</td>
+                                                <td>8:41:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>18 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                <td>4130</td>
+                                                <td>Dayang Sumbi</td>
+                                                <td>R4</td>
+                                                <td>10:06:00</td>
+                                                <td>Podium 2 female</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td>4060</td>
+                                                <td>8anyak 9aya</td>
+                                                <td>R4</td>
+                                                <td>10:14:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>4040</td>
+                                                <td>La88ler R4 Mix</td>
+                                                <td>R4</td>
+                                                <td>10:51:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>21</td>
+                                                <td>4220</td>
+                                                <td>M96 Botol</td>
+                                                <td>R4</td>
+                                                <td>10:54:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22</td>
+                                                <td>4020</td>
+                                                <td>M96Tampan</td>
+                                                <td>R4</td>
+                                                <td>10:55:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>23</td>
+                                                <td>4240</td>
+                                                <td>Tahan Gempa</td>
+                                                <td>R4</td>
+                                                <td>10:56:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>24</td>
+                                                <td>4010</td>
+                                                <td>M96 Calm Runners</td>
+                                                <td>R4</td>
+                                                <td>10:59:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>25</td>
+                                                <td>4270</td>
+                                                <td>JJKI</td>
+                                                <td>R4</td>
+                                                <td>11:41:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>26</td>
+                                                <td>4200</td>
+                                                <td>M96 4 sekawan</td>
+                                                <td>R4</td>
+                                                <td>11:50:00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>27</td>
+                                                <td>4090</td>
+                                                <td>ZIBS - ITB77</td>
+                                                <td>R4</td>
+                                                <td>12:16:00</td>
+                                                <td></td>
+                                            </tr>
+											</tbody>
+										</table>
+									</div>
+									<div id="relay8" class="container tab-pane">
+										<br>
+										<table id="tbl-but-22" class="table table-striped table-bordered dt-responsive tbl-but" style="width:100%">
+											<thead>
+												<tr>
+												    <th>
+														Rank
+													</th>
+													<th>
+														Bib Number
+													</th>
+													<th>
+														Name
+													</th>
+													<th>
+													    Category
+													</th>
+													<th>
+													    Time
+													</th>
+													<th>
+														Description
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+											    <tr>
+                                                    <td>1 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>8730</td>
+                                                    <td>KMPA Numero Uno</td>
+                                                    <td>R8</td>
+                                                    <td>6:49:37</td>
+                                                    <td>Podium 1 mix</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>2 <i class="fa-solid fa-trophy" style="color:#FF0000"></i></td>
+                                                    <td>8710</td>
+                                                    <td>Mauna Kea</td>
+                                                    <td>R8</td>
+                                                    <td>6:55:23</td>
+                                                    <td>Ganti peserta (n/e podium)</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td>3 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>8230</td>
+                                                    <td>Trail Rangers</td>
+                                                    <td>R8</td>
+                                                    <td>7:00:29</td>
+                                                    <td>Podium 1 female</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>4 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>8250</td>
+                                                    <td>Duracel Draco</td>
+                                                    <td>R8</td>
+                                                    <td>7:46:26</td>
+                                                    <td>Podium 1 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>8720</td>
+                                                    <td>Citilink</td>
+                                                    <td>R8</td>
+                                                    <td>7:47:19</td>
+                                                    <td>Podium 2 mix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6 <i class="fa-solid fa-trophy" style="color:#FABF8F"></i></td>
+                                                    <td>8100</td>
+                                                    <td>Metal Runners</td>
+                                                    <td>R8</td>
+                                                    <td>7:54:22</td>
+                                                    <td>Podium 3 mix</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>8210</td>
+                                                    <td>10'dix 'run</td>
+                                                    <td>R8</td>
+                                                    <td>8:19:45</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>8740</td>
+                                                    <td>TIM Citilink Runners</td>
+                                                    <td>R8</td>
+                                                    <td>8:21:44</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>8130</td>
+                                                    <td>CELEPUK87</td>
+                                                    <td>R8</td>
+                                                    <td>8:24:55</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>8400</td>
+                                                    <td>Kancil 8</td>
+                                                    <td>R8</td>
+                                                    <td>8:27:19</td>
+                                                    <td>Podium 2 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>8270</td>
+                                                    <td>Mamah Gajah Ngetrail</td>
+                                                    <td>R8</td>
+                                                    <td>8:39:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12 <i class="fa-solid fa-trophy" style="color:#FF0000"></i></td>
+                                                    <td>8240</td>
+                                                    <td>90Losor</td>
+                                                    <td>R8</td>
+                                                    <td>8:49:00</td>
+                                                    <td>Ganti peserta (n/e podium)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>8340</td>
+                                                    <td>Dekan Berlari untuk Dana Lestari</td>
+                                                    <td>R8</td>
+                                                    <td>9:11:56</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>8330</td>
+                                                    <td>M96 Mudah Lelah dan Menyerah</td>
+                                                    <td>R8</td>
+                                                    <td>9:13:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>8160</td>
+                                                    <td>9anten6 &amp; 9a6ah</td>
+                                                    <td>R8</td>
+                                                    <td>9:21:45</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>8200</td>
+                                                    <td>M89 R8</td>
+                                                    <td>R8</td>
+                                                    <td>9:25:40</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17 <i class="fa-solid fa-trophy" style="color:#92D050"></i></td>
+                                                    <td>8030</td>
+                                                    <td>Keluarga Bandung Coret</td>
+                                                    <td>R8</td>
+                                                    <td>9:44:00</td>
+                                                    <td>Podium 3 male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>8190</td>
+                                                    <td>Asik Berlari</td>
+                                                    <td>R8</td>
+                                                    <td>9:51:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>8390</td>
+                                                    <td>Run93Run Markimon8</td>
+                                                    <td>R8</td>
+                                                    <td>9:52:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>8060</td>
+                                                    <td>GARILARI X RAVENCLAW</td>
+                                                    <td>R8</td>
+                                                    <td>9:55:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>8290</td>
+                                                    <td>90rolong</td>
+                                                    <td>R8</td>
+                                                    <td>9:56:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>8050</td>
+                                                    <td>90eling 90eling</td>
+                                                    <td>R8</td>
+                                                    <td>9:56:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>23</td>
+                                                    <td>8280</td>
+                                                    <td>GELATIK 87</td>
+                                                    <td>R8</td>
+                                                    <td>9:56:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24</td>
+                                                    <td>8360</td>
+                                                    <td>8erasa 9ajah</td>
+                                                    <td>R8</td>
+                                                    <td>10:30:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25 <i class="fa-solid fa-trophy" style="color:#00B0F0"></i></td>
+                                                    <td>8090</td>
+                                                    <td>STRON96IRLS</td>
+                                                    <td>R8</td>
+                                                    <td>10:47:00</td>
+                                                    <td>Podium 2 female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>8110</td>
+                                                    <td>RUN84FUN</td>
+                                                    <td>R8</td>
+                                                    <td>10:49:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>8300</td>
+                                                    <td>menan96aya</td>
+                                                    <td>R8</td>
+                                                    <td>10:50:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>8310</td>
+                                                    <td>Duracel Cygnus</td>
+                                                    <td>R8</td>
+                                                    <td>10:50:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>8120</td>
+                                                    <td>Tim 94NESHA</td>
+                                                    <td>R8</td>
+                                                    <td>10:57:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30</td>
+                                                    <td>8180</td>
+                                                    <td>IAIF CodeRunners R8</td>
+                                                    <td>R8</td>
+                                                    <td>11:19:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>31</td>
+                                                    <td>8170</td>
+                                                    <td>Dosen FTMD</td>
+                                                    <td>R8</td>
+                                                    <td>11:31:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32</td>
+                                                    <td>8220</td>
+                                                    <td>Beukicot R8</td>
+                                                    <td>R8</td>
+                                                    <td>11:33:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>33</td>
+                                                    <td>8380</td>
+                                                    <td>EL8u9ar</td>
+                                                    <td>R8</td>
+                                                    <td>11:33:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34</td>
+                                                    <td>8150</td>
+                                                    <td>Comrades in Run</td>
+                                                    <td>R8</td>
+                                                    <td>11:35:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>35</td>
+                                                    <td>8140</td>
+                                                    <td>Arjuna 9ajah 8erlari</td>
+                                                    <td>R8</td>
+                                                    <td>11:54:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36</td>
+                                                    <td>8260</td>
+                                                    <td>Timik Timik Biru</td>
+                                                    <td>R8</td>
+                                                    <td>12:10:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>37</td>
+                                                    <td>8410</td>
+                                                    <td>AwugExplorer</td>
+                                                    <td>R8</td>
+                                                    <td>12:10:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>38</td>
+                                                    <td>8080</td>
+                                                    <td>Timik-timik Pink</td>
+                                                    <td>R8</td>
+                                                    <td>12:11:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>39</td>
+                                                    <td>8070</td>
+                                                    <td>GARILARI X HUFFLEPUFF</td>
+                                                    <td>R8</td>
+                                                    <td>12:19:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40</td>
+                                                    <td>8020</td>
+                                                    <td>ITB80Trail</td>
+                                                    <td>R8</td>
+                                                    <td>14:17:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>41</td>
+                                                    <td>8320</td>
+                                                    <td>R8 Bersih</td>
+                                                    <td>R8</td>
+                                                    <td>15:02:00</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42</td>
+                                                    <td>8010</td>
+                                                    <td>81XFR GALENDO</td>
+                                                    <td>R8</td>
+                                                    <td>15:20:00</td>
+                                                    <td>DNF - Not Complete Course</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>43</td>
+                                                    <td>8350</td>
+                                                    <td>81XFR DOCLANG</td>
+                                                    <td>R8</td>
+                                                    <td>15:20:00</td>
+                                                    <td>DNF - Not Complete Course</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>44</td>
+                                                    <td>8040</td>
+                                                    <td>TIM SKOLARI ITB LINTANG</td>
+                                                    <td>R8</td>
+                                                    <td>15:22:00</td>
+                                                    <td>DNF - Not Complete Course</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>45</td>
+                                                    <td>8370</td>
+                                                    <td>81XFR Colenak</td>
+                                                    <td>R8</td>
+                                                    <td>15:22:00</td>
+                                                    <td>DNF - Not Complete Course</td>
+                                                </tr>
+											</tbody>
+
+										</table>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				<!--<div class="block-content">-->
+    <!--                <div class="row justify-content-center">-->
+    <!--                    <div class="col-md-12 ">-->
+
+    <!--                        <iframe src="https://drive.google.com/file/d/1V56JKSFbXj9s5tygRFxt6XAKrcYiZACg/preview" width="100%" height="800px;"></iframe>-->
+                            
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+				</div>
+
+		</main>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
+        <div class="titleLogin text-center">
+          <img src="/img/logo_trekka.png" style="width:50px;">
+          <h3>SIGN IN</h3>
+        </div>
+
+        <form action="/action_page.php">
+          
+          <div class="form-login">
+            <label for="email">Username or email</label>
+            <div class="input-group">
+              <span><i class="icon1 fa-solid fa-envelope"></i></span>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+          </div>
+
+          <div class="form-password mt-2">
+            <label for="pwd">Password</label>
+            <div class="input-group">
+              <span><i class="icon1 fa-solid fa-lock"></i></span>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+          </div>
+
+          <div class="forgot-password mt-2">
+            <a href="#">
+              <p style="font-size:0.8rem">Forgot Password?</p>
+            </a>
+          </div>
+
+        </form>
+        <div class="button-login mt-5 text-center">
+          <button type="button" class="btn" style="background-color: white;color: #05223d;" data-bs-toggle="modal" data-bs-target="#modalSignup" data-bs-dismiss="modal">Create Account</button>
+          <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d; min-width: 150px;">Login</button>
+        </div>
+
+        <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+      
+       </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal Sign Up-->
+<div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="logo-signup" style="text-align:left"><img src="/img/logo_baru.png" style="width:100px;"></div>
+          </div>
+
+          <div class="col-6">
+            <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          
+        </div>
+
+        
+        <h3 class="text-center">SIGN UP</h3>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-firstname">
+                    <label for="uname">First Name</label>
+                    <input type="name" class="form-control" id="firstname" placeholder="Enter Firstname" name="firstname">
+                  </div>
+                </div>
+                <div class="col-lastname col-md-6">
+                  <div class="form-username">
+                    <label for="uname">Last Name</label>
+                    <input type="name" class="form-control" id="lastname" placeholder="Enter Lastname" name="lastname">
+                  </div>
+                </div>
+              </div>
+
+            <div class="select-jenisKelamin mt-2">
+              <label for="jenisKelamin">Gender</label>
+              <select class="form-select" aria-label="Select Jenis Kelamin">
+                <option selected>Select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+            </div>
+
+            <div class="form-lahir mt-2">
+              <label for="tanggalLahir">Birthday</label>
+              <input id="tanggalLahir" class="form-control" type="date"/>
+            </div>
+
+            <div class="select-negara mt-2">
+              <label for="negara">Country</label>
+              <select class="form-select" aria-label="Select Negara">
+                <option selected>Select</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Belanda</option>
+                <option value="1">Jepang</option>
+                <option value="2">Australia</option>
+              </select>
+            </div>
+
+
+            </div>
+            <div class="col-signup col-md-6 col-12">
+              <div class="form-username">
+                <label for="uname">Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Enter Username" name="uname">
+              </div>
+
+              <div class="form-email mt-2">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+
+              <div class="form-password mt-2">
+                <label for="pwd">Password</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+    
+              <div class="form-verif-password mt-2">
+                <label for="pwd2">Confirm Password</label>  
+                <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pwd2">
+              </div>
+            
+            </div>
+            
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-login mt-4 text-center">
+          <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d;">Create Account</button>
+        </div>
+
+        <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        <p class="text-center mt-1" style="font-size:0.8rem">Already have an account?<a href="" data-bs-toggle="modal" data-bs-target="#modalLogin" data-bs-dismiss="modal"> Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-top text-white">
+     <div class="container">
+       <div class="container">
+         <div class="row">
+          <div class="med-sos col-md-4 col-12 mt-4"> 
+              <div class="">
+                  <img src="/img/logo_baru_1.png" style="width:175px;">
+              </div>
+              
+              <div class="mt-2"> 
+                  <!--<i class="fa-brands fa-twitter mr-3" style="margin-right: 10px;margin-left: 16px;" ><a href="htts://twitter.com" target="_blank"></a></i>-->
+                  <a href="https://www.facebook.com/people/Trekka-Bumi-Nusantara/100086689234178/" target="_blank" style="text-decoration:none"><i class="fa-brands fa-facebook" style="margin-right: 10px;margin-left:4px;"></i>
+                  <a href="https://www.instagram.com/trekka.id/" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 10px;"></i></a>
+                  <!--<i class="fa-brands fa-tiktok" style="margin-right: 10px;"></i>-->
+                  <a href="https://www.youtube.com/channel/UCS30othbS4o7k_M3PrMcJoA/channels" target="_blank"><i class="fa-brands fa-youtube" style="margin-right: 10px;"></i></a>
+              </div>
+          </div> 
+          <div class="col-md-4 col-12" >
+           </div> 
+          <div class="contact-us col-md-4 col-12" style="text-align:right">
+             <h4 class="text-align mb-3">Contact Us</h4>
+              <div class="full icon text-align-center">
+                     <p> <i class="fa-solid fa-location-dot"></i> Kota Wisata, Bogor, ID</p>
+                 </div>
+                 <div class="full icon text-align-center">
+                   <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:info@trekka.id"> info@trekka.id</a></p>
+                 </div>
+                 <div class="full icon text-align-center">
+                  <p><i class="fa-solid fa-phone"></i> +62 21 84932015</p>
+                  </div>
+           </div>
+                    
+             
+             <div class="col-lg-12 white_fonts">
+                
+             </div>
+             <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                 
+             </div>
+
+         </div>
+         <!-- <div class="row white_fonts margin-top_30">
+             <div class="col-lg-12">
+                 <div class="full">
+                     <div class="center">
+                         <ul class="social_icon">
+                             <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div> -->
+     </div>
+     </div>
+ </div> 
+ <div class="footer-bottom py-3">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <p class="mb-0 text-white">© PT TREKKA BUMI NUSANTARA</p>
+             </div>
+             <div class="col-md-6">
+                 <div class="social-icons">
+                     <a href="#"><i class='bx bxl-facebook'></i></a>
+                     <a href="#"><i class='bx bxl-twitter'></i></a>
+                     <a href="https://www.instagram.com/trekka.id/"><i class='bx bxl-instagram-alt'></i></a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</footer>
+       
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+		</script>
+		<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+		</script>
+		<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
+		</script>
+		<script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js">
+		</script>
+
+		<script>
+			$(document).ready(function()
+				{
+					$('.tbl-but').DataTable();
+
+					$('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e)
+						{
+							$.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+						} );
+
+
+				} );
+
+
+		</script>
+    <script>
+        AOS.init();
+      </script>
+        <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled',$(this).scrollTop() > 1060);
+      });
+    </script>
+    
+    <script>
+     const nav = document.querySelector('nav');
+
+     window.addEventListener('scroll', () => {
+      if (window.scrollY >= 50) {
+        nav.classList.add('bg-white');
+      } else {
+        nav.classList.remove('bg-white');
+      }
+     })
+    </script>
+
+  <script>
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 50) {
+      $('.nav_links').css({"color":"black"});
+    } else {
+      $('.nav_links').css({"color":"white"});
+    }
+    });
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY >= 50) { 
+      $('.logo').attr('src','/img/logo_baru.png');
+    } else {
+      $('.logo').attr('src','/img/logo_baru_1.png');
+    }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <!-- css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+
+    <title>Trekka</title>
+     <style>
+     @media only screen and (max-width: 767px) {
+        .img_crs {
+          width:300% !important;
+        }
+        
+        .txt_crs {
+            font-size:43px !important;
+        }
+        
+        .contact-us{
+            margin-top:1rem;
+            text-align: center !important;
+        }
+        
+        .med-sos{
+            text-align: center !important;
+        }
+        
+        }
+        
+        body{
+            position: relative;
+            font-family: 'Exo 2', sans-serif;
+        }
+        
+        .bg-secondary{
+        background-color: #246d8e !important;
+        }
+        
+            
+        .btn-login{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .col-signup {
+            margin-top: 0.5rem;
+        }
+    
+        .col-lastname{
+            margin-top:0.5rem;
+        }
+        
+        .nav_links {
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+
+<div class="wrapper">
+    <!-- header -->
+     <header class="header">
+            <!--<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">-->
+              <nav class="navbar fixed-top navbar-expand-lg p-md-3" style="">
+                <div class="container1 container">
+                <a class="navbar-brand" href="/">
+                    <img class="logo" src="img/logo_baru_1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav_links px-4" href="/about_us.html">About Us</a>
+                    <a class="nav-link nav_links px-4" href="/races.html">Races</a>
+                    <a class="nav-link nav_links px-4" href="/program.html">Programs</a>
+                    <a class="nav-link nav_links px-4" href="/community.html">Community</a>
+                    <!-- <a class="nav-link text-dark px-4" href="/shop.html">Store</a> -->
+                    </div>
+                    <form class="d-flex">
+                      <button type="button" class="btn-login btn text-white" data-bs-toggle="modal" data-bs-target="#modalLogin" style="background-color:#072745;">Login</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="">
+            <div class="container">
+              <a class="navbar-brand" href="/">
+                <img class="logo" src="img/logo.png" alt="">
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/races.html">Races</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/program.html">Membership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="/shop.html">Shop</a>
+                  </li>
+                   <form class="d-flex">
+                    <button class="btn text-white" type="submit" style="background-color:#072745;">Join Now</button>
+                  </form>
+                </ul>
+              </div>
+            </div>
+          </nav> -->
+
+    <!-- banner content-->
+    <div class="carousel-container">
+        <div id="carouselExampleSlideOnly" class="carousel1 carousel slide" data-ride="carousel">
+               <div class="carousel-inner" style=" min-width: 100%;height: 400px;">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="img/peak.jpg"
+                            style=" min-width: 100%;height: 400px;">
+                            <div class="carousel-caption" style="top:130px !important">
+                              <h5 class="animated fadeInDown" style="animation-delay: 1s">Races</h5>
+                              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- <div class="home-header">
+    <div class="video-container">
+        <video class="video2 video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/1.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="header-text">
+        <img class="text1" src="img/logo-white.png" style="height: 300px;"><h1>HALO</h1>
+    </div>
+</div> -->
+<!--Content-->
+        <div class="container mb-5 mt-3">
+            <!-- <div class="row" style="position:relative;">
+            <div class="col-sm-12 mb-3">
+                <div class="card1 card">
+                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
+                 </div>
+            </div>
+            </div> -->
+            <div class="row" id="myItems">
+            
+                <div class="col-sm-12 mb-3">
+                <div class="card card-effect">
+                <div class="card-body">
+                
+        <div class="row">
+        <div class="col-lg-3 col-sm-12">
+            <img src="img/but.jpg" style="max-width:325px;width:100%;">
+        </div>
+        <div class="col-lg-9 col-sm-12 mt-3 mr-2">
+        <div class="row">
+            <div class="w-100"></div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-lg-6 col-sm-12">
+                <h2> Bali Ultra Trail</h2>
+                <h6> Deskripsi</h6>
+                <h5 class="text-danger"> Kintamani, Bali</h5>
+                </div>
+                <div class="col-lg-3 col-sm-12"></div>
+                <div class="detail1 col-lg-3 col-sm-12">
+                    <a href="https://baliultratrail.com/race-result" target="_blank"><button class="btn btn-primary mt-3 mb-3" type="submit" style="width: 100%;height: 81%;">SEE RESULT</button></a>
+                </div>
+                <div class="detail2 col-lg-10 col-sm-12">
+                    <div class="row justify-align-center" style="top: 10px;
+                    position: relative;">   
+                        <div class="col-md-3 col-sm-3 mx-auto" style="border:1px solid #a7a7a7">
+                           <div style="display:ruby">
+                            <img class="mt-1 mb-1" src="img/run.png" style="width:35px;">
+                            <div>
+                                <h6 class="mt-3 mb-2">
+                                    Running
+                                </h6>
+                            </div>
+                            
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                            <div style="display:ruby">
+                                <img class="mt-1 mb-1" src="img/trail.png" style="width:35px;">
+                                <div>
+                                    <h6 class="mt-3 mb-2">
+                                       Trail
+                                    </h6>
+                                </div>
+                                
+                               </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                            <div style="display:ruby">
+                                <img class="mt-1 mb-1" src="img/calendar.png" style="width:30px;">
+                                <div>
+                                    <h6 class="mt-3 mb-2">
+                                        March 15, 2022
+                                    </h6>
+                                </div>
+                                
+                               </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                            <div style="display:ruby">
+                                <img class="mt-1 mb-1" src="img/status.png" style="width:30px;">
+                                <div>
+                                    <h6 class="mt-3 mb-2">
+                                       Open Registration
+                                    </h6>
+                                </div>
+                                
+                               </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                
+                </div>
+        </div>
+        </div>
+</div>
+  
+  
+                      
+                        <!-- <h5 class="card-title"><a href="#">Card One</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some text.</p> -->
+                    </div>
+                </div>
+                </div>
+        
+                <div class="col-sm-12 mb-3">
+                    <div class="card card-effect">
+                        <div class="card-body">
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-12">
+                                    <img src="img/slider_1.jpg" style="max-width:325px;width:100%;">
+                                </div>
+                            <div class="col-lg-9 col-sm-12 mt-3 mr-2">
+                                <div class="row">
+                                    <div class="w-100"></div>
+                                </div>
+                            <div class="row flex-container">
+                                <div class="col-lg-6 col-sm-12">
+                                    <h2> ITB Ultra Trail</h2>
+                                    <h6> Deskripsi</h6>
+                                    <h5 class="text-danger"> Bandung-Sumedang</h5>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-12"></div>
+                                    <div class="detail1 col-lg-3 col-sm-12">
+                                        <a href="https://dev2.trekka.id/result.html" target="_blank"><button class="btn btn-primary mt-3 mb-3" type="submit" style="width: 100%;height: 81%;">SEE RESULTS</button></a>
+                                    </div>
+                                    <div class="detail2 col-lg-10 col-sm-12">
+                                        <div class="row justify-align-center" style="top: 10px;
+                                        position: relative;">   
+                                            <div class="col-md-3 col-sm-3 mx-auto" style="border:1px solid #a7a7a7">
+                                            <div style="display:ruby">
+                                                <img class="mt-1 mb-1" src="img/run.png" style="width:35px;">
+                                                <div>
+                                                    <h6 class="mt-3 mb-2">
+                                                        Running
+                                                    </h6>
+                                                </div>
+                                                
+                                            </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                                <div style="display:ruby">
+                                                    <img class="mt-1 mb-1" src="img/trail.png" style="width:35px;">
+                                                    <div>
+                                                        <h6 class="mt-3 mb-2">
+                                                        Trail
+                                                        </h6>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                                <div style="display:ruby">
+                                                    <img class="mt-1 mb-1" src="img/calendar.png" style="width:30px;">
+                                                    <div>
+                                                        <h6 class="mt-3 mb-2">
+                                                            August 20, 2022
+                                                        </h6>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                                <div style="display:ruby">
+                                                    <img class="mt-1 mb-1" src="img/status.png" style="width:30px;">
+                                                    <div>
+                                                        <h6 class="mt-3 mb-2">
+                                                            Coming Soon
+                                                        </h6>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-4">
+                                    
+                                    </div>
+                            </div>
+                            </div>
+                    </div>
+      
+      
+                          
+                            <!-- <h5 class="card-title"><a href="#">Card One</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some text.</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 mb-3">
+                    <div class="card card-effect">
+                    <div class="card-body">
+                    
+            <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <img src="img/slider_2.jpg" style="max-width:325px;width:100%;">
+            </div>
+            <div class="col-lg-9 col-sm-12 mt-3 mr-2">
+            <div class="row">
+                <div class="w-100"></div>
+            </div>
+            <div class="row flex-container">
+                <div class="col-lg-6 col-sm-12">
+                    <h2> ITB Ultra Marathon</h2>
+                    <h6> Deskripsi</h6>
+                    <h5 class="text-danger"> Jakarta-Bandung</h5>
+                    </div>
+                    <div class="col-lg-3 col-sm-12"></div>
+                    <div class="detail1 col-lg-3 col-sm-12">
+                        <a href="https://baliultratrail.com/" target="_blank"><button class="btn btn-primary mt-3 mb-3" type="submit" style="width: 100%;height: 81%;">SEE DETAILS</button></a>
+                    </div>
+                    <div class="detail2 col-lg-10 col-sm-12">
+                        <div class="row justify-align-center" style="top: 10px;
+                        position: relative;">   
+                            <div class="col-md-3 col-sm-3 mx-auto" style="border:1px solid #a7a7a7">
+                               <div style="display:ruby">
+                                <img class="mt-1 mb-1" src="img/run.png" style="width:35px;">
+                                <div>
+                                    <h6 class="mt-3 mb-2">
+                                        Running
+                                    </h6>
+                                </div>
+                                
+                               </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                <div style="display:ruby">
+                                    <img class="mt-1 mb-1" src="img/road.png" style="width:35px;">
+                                    <div>
+                                        <h6 class="mt-3 mb-2">
+                                           Road
+                                        </h6>
+                                    </div>
+                                    
+                                   </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                <div style="display:ruby">
+                                    <img class="mt-1 mb-1" src="img/calendar.png" style="width:30px;">
+                                    <div>
+                                        <h6 class="mt-3 mb-2">
+                                           28-30 October 2022
+                                        </h6>
+                                    </div>
+                                    
+                                   </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                <div style="display:ruby">
+                                    <img class="mt-1 mb-1" src="img/status.png" style="width:30px;">
+                                    <div>
+                                        <h6 class="mt-3 mb-2">
+                                           Coming Soon
+                                        </h6>
+                                    </div>
+                                    
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2">
+                    
+                    </div>
+            </div>
+            </div>
+    </div>
+      
+      
+                          
+                            <!-- <h5 class="card-title"><a href="#">Card One</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some text.</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 mb-3">
+                        <div class="card card-effect">
+                        <div class="card-body">
+                        
+                <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <img src="img/slider_3.jpg" style="max-width:325px;width:100%;">
+                </div>
+                <div class="col-lg-9 col-sm-12 mt-3 mr-2">
+                <div class="row">
+                    <div class="w-100"></div>
+                </div>
+                <div class="row flex-container">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2> ITB Ultra Cycling</h2>
+                        <h6> Deskripsi</h6>
+                        <h5 class="text-danger"> Bandung Raya</h5>
+                        </div>
+                        <div class="col-lg-3 col-sm-12"></div>
+                        <div class="detail1 col-lg-3 col-sm-12">
+                            <a href="https://baliultratrail.com/" target="_blank"><button class="btn btn-primary mt-3 mb-3" type="submit" style="width: 100%;height: 81%;">SEE DETAILS</button></a>
+                        </div>
+                        <div class="detail2 col-lg-10 col-sm-12">
+                            <div class="row justify-align-center" style="top: 10px;
+                            position: relative;">   
+                                <div class="col-md-3 col-sm-3 mx-auto" style="border:1px solid #a7a7a7">
+                                   <div style="display:ruby">
+                                    <img class="mt-1 mb-1" src="img/bicycle.png" style="width:35px;">
+                                    <div>
+                                        <h6 class="mt-3 mb-2">
+                                            Cycling
+                                        </h6>
+                                    </div>
+                                    
+                                   </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                    <div style="display:ruby">
+                                        <img class="mt-1 mb-1" src="img/road.png" style="width:35px;">
+                                        <div>
+                                            <h6 class="mt-3 mb-2">
+                                               Road
+                                            </h6>
+                                        </div>
+                                        
+                                       </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                    <div style="display:ruby">
+                                        <img class="mt-1 mb-1" src="img/calendar.png" style="width:30px;">
+                                        <div>
+                                            <h6 class="mt-3 mb-2">
+                                                December 3, 2022
+                                            </h6>
+                                        </div>
+                                        
+                                       </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3" style="border:1px solid #a7a7a7"> 
+                                    <div style="display:ruby">
+                                        <img class="mt-1 mb-1" src="img/status.png" style="width:30px;">
+                                        <div>
+                                            <h6 class="mt-3 mb-2">
+                                               Coming Soon
+                                            </h6>
+                                        </div>
+                                        
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-4">
+                        
+                        </div>
+                </div>
+                </div>
+        </div>
+          
+          
+                              
+                                <!-- <h5 class="card-title"><a href="#">Card One</a></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some text.</p> -->
+                            </div>
+                        </div>
+                </div>
+
+            </div>    
+            </div>
+        </div>
+
+        <!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  
+          <div class="titleLogin text-center">
+            <img src="/img/logo_trekka.png" style="width:50px;">
+            <h3>SIGN IN</h3>
+          </div>
+  
+          <form action="/action_page.php">
+            
+            <div class="form-login">
+              <label for="email">Username or email</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-envelope"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+            </div>
+  
+            <div class="form-password mt-2">
+              <label for="pwd">Password</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-lock"></i></span>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+            </div>
+  
+            <div class="forgot-password mt-2">
+              <a href="#">
+                <p style="font-size:0.8rem">Forgot Password?</p>
+              </a>
+            </div>
+  
+          </form>
+          <div class="button-login mt-5 text-center">
+            <button type="button" class="btn" style="background-color: white;color: #05223d;" data-bs-toggle="modal" data-bs-target="#modalSignup" data-bs-dismiss="modal">Create Account</button>
+            <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d; min-width: 150px;">Login</button>
+          </div>
+  
+          <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        
+         </div>
+      </div>
+    </div>
+  </div>
+  
+<!--Modal Sign Up-->
+<div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="logo-signup" style="text-align:left"><img src="/img/logo_baru.png" style="width:100px;"></div>
+          </div>
+
+          <div class="col-6">
+            <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          
+        </div>
+
+        
+        <h3 class="text-center">SIGN UP</h3>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-firstname">
+                    <label for="uname">First Name</label>
+                    <input type="name" class="form-control" id="firstname" placeholder="Enter Firstname" name="firstname">
+                  </div>
+                </div>
+                <div class="col-lastname col-md-6">
+                  <div class="form-username">
+                    <label for="uname">Last Name</label>
+                    <input type="name" class="form-control" id="lastname" placeholder="Enter Lastname" name="lastname">
+                  </div>
+                </div>
+              </div>
+
+            <div class="select-jenisKelamin mt-2">
+              <label for="jenisKelamin">Gender</label>
+              <select class="form-select" aria-label="Select Jenis Kelamin">
+                <option selected>Select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+            </div>
+
+            <div class="form-lahir mt-2">
+              <label for="tanggalLahir">Birthday</label>
+              <input id="tanggalLahir" class="form-control" type="date"/>
+            </div>
+
+            <div class="select-negara mt-2">
+              <label for="negara">Country</label>
+              <select class="form-select" aria-label="Select Negara">
+                <option selected>Select</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Belanda</option>
+                <option value="1">Jepang</option>
+                <option value="2">Australia</option>
+              </select>
+            </div>
+
+
+            </div>
+            <div class="col-signup col-md-6 col-12">
+              <div class="form-username">
+                <label for="uname">Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Enter Username" name="uname">
+              </div>
+
+              <div class="form-email mt-2">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+
+              <div class="form-password mt-2">
+                <label for="pwd">Password</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+    
+              <div class="form-verif-password mt-2">
+                <label for="pwd2">Confirm Password</label>  
+                <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pwd2">
+              </div>
+            
+            </div>
+            
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-login mt-4 text-center">
+          <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d;">Create Account</button>
+        </div>
+
+        <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        <p class="text-center mt-1" style="font-size:0.8rem">Already have an account?<a href="" data-bs-toggle="modal" data-bs-target="#modalLogin" data-bs-dismiss="modal"> Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <<footer>
+  <div class="footer-top text-white">
+     <div class="container">
+       <div class="container">
+         <div class="row">
+          <div class="med-sos col-md-4 col-12 mt-4"> 
+              <div class="">
+                  <img src="/img/logo_baru_1.png" style="width:175px;">
+              </div>
+              
+              <div class="mt-2"> 
+                  <!--<i class="fa-brands fa-twitter mr-3" style="margin-right: 10px;margin-left: 16px;" ><a href="htts://twitter.com" target="_blank"></a></i>-->
+                  <a href="https://www.facebook.com/people/Trekka-Bumi-Nusantara/100086689234178/" target="_blank" style="text-decoration:none"><i class="fa-brands fa-facebook" style="margin-right: 10px;margin-left:4px;"></i>
+                  <a href="https://www.instagram.com/trekka.id/" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 10px;"></i></a>
+                  <!--<i class="fa-brands fa-tiktok" style="margin-right: 10px;"></i>-->
+                  <a href="https://www.youtube.com/channel/UCS30othbS4o7k_M3PrMcJoA/channels" target="_blank"><i class="fa-brands fa-youtube" style="margin-right: 10px;"></i></a>
+              </div>
+          </div> 
+          <div class="col-md-4 col-12" >
+           </div> 
+          <div class="contact-us col-md-4 col-12" style="text-align:right">
+             <h4 class="text-align mb-3">Contact Us</h4>
+              <div class="full icon text-align-center">
+                     <p> <i class="fa-solid fa-location-dot"></i> Kota Wisata, Bogor, ID</p>
+                 </div>
+                 <div class="full icon text-align-center">
+                   <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:info@trekka.id"> info@trekka.id</a></p>
+                 </div>
+                 <div class="full icon text-align-center">
+                  <p><i class="fa-solid fa-phone"></i> +62 21 84932015</p>
+                  </div>
+           </div>
+                    
+             
+             <div class="col-lg-12 white_fonts">
+                
+             </div>
+             <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                 
+             </div>
+
+         </div>
+         <!-- <div class="row white_fonts margin-top_30">
+             <div class="col-lg-12">
+                 <div class="full">
+                     <div class="center">
+                         <ul class="social_icon">
+                             <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div> -->
+     </div>
+     </div>
+ </div> 
+ <div class="footer-bottom py-3">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <p class="mb-0 text-white">© PT TREKKA BUMI NUSANTARA</p>
+             </div>
+             <div class="col-md-6">
+                 <div class="social-icons">
+                     <a href="#"><i class='bx bxl-facebook'></i></a>
+                     <a href="#"><i class='bx bxl-twitter'></i></a>
+                     <a href="https://www.instagram.com/trekka.id/"><i class='bx bxl-instagram-alt'></i></a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script type="text/javascript">
+
+      function myFunction() {
+            var input, filter, cards, cardContainer, h5, title, i;
+            input = document.getElementById("myFilter");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("myItems");
+            cards = cardContainer.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].querySelector(".card-body h5.card-title");
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+    
+       <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled',$(this).scrollTop() > 1060);
+      });
+    </script>
+    
+    <script>
+     const nav = document.querySelector('nav');
+
+     window.addEventListener('scroll', () => {
+      if (window.scrollY >= 50) {
+        nav.classList.add('bg-white');
+      } else {
+        nav.classList.remove('bg-white');
+      }
+     })
+    </script>
+
+  <script>
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 50) {
+      $('.nav_links').css({"color":"black"});
+    } else {
+      $('.nav_links').css({"color":"white"});
+    }
+    });
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY >= 50) { 
+      $('.logo').attr('src','/img/logo_baru.png');
+    } else {
+      $('.logo').attr('src','/img/logo_baru_1.png');
+    }
+    });
+  </script>
+    
+</body>
+</html>
