@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+    <!-- css-->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+
+    <title>Indonesia Running Expo 2025</title>
+    <style>
+     @media only screen and (max-width: 767px) {
+        .img_crs {
+          width:300% !important;
+        }
+        
+        .col-e {
+            margin-top:0.5rem;
+        }
+        
+        .txt_crs {
+            font-size:43px !important;
+        }
+
+        .owl-prev {
+          left: -1rem !important;
+        }
+
+        .owl-next {
+          right: -1rem !important;
+        }
+        .med-sos{
+            text-align: center !important;
+        }
+        
+        .contact-us{
+            margin-top:1rem;
+            text-align: center !important;
+        }
+        }
+                
+        .bg-secondary{
+        background-color: #246d8e !important;
+        }
+
+        
+        .btn-login{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .owl-prev,
+        .owl-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .owl-prev {
+          left: -2rem;
+        }
+
+        .owl-next {
+          right: -2rem;
+        }
+        
+        .nav_links {
+          color: white;
+        }
+
+        .speaker-tags {
+          margin: -11px 0 0 10px;
+        }
+
+        .img-exhibitor {
+          max-height: 75px;
+          width: 90px!important;
+          min-width: 90px;
+          min-height: 75px;
+        }
+
+      .footer-top {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          background-color:#b90000;;
+      }
+
+        .card-exhibition {
+          background-position: 50% !important;
+          background-repeat: no-repeat !important;
+          background-size: calc(100% - 20px) !important;
+          /* border: 4px solid rgba(24,24,43,.06)!important;
+            border-top-color: rgba(24, 24, 43, 0.06)!important;
+            border-right-color: rgba(24, 24, 43, 0.06)!important;
+            border-bottom-color: rgba(24, 24, 43, 0.06)!important;
+            border-left-color: rgba(24, 24, 43, 0.06)!important; */
+          border-radius: 54px!important;
+          -webkit-box-shadow: 4px 8px 15px rgba(24,24,43,.16)!important;
+          box-shadow: 4px 8px 15px rgba(24,24,43,.16)!important;
+          -webkit-box-sizing: border-box!important;
+          box-sizing: border-box!important;
+          display: grid!important;
+          line-height: 1!important;
+          padding: 10px!important;
+          text-decoration: none!important;
+          -webkit-transition: .5s!important;
+          transition: .5s!important;
+          width: 100%!important;
+          width: 200px!important;
+          -webkit-box-pack: center !important;
+          -ms-flex-pack: center!important;
+          justify-content: center!important;
+          justify-items: center!important;
+          word-wrap: anywhere;
+        }
+
+        .logo_crs {
+          height: 100px;
+          padding: 2px 10px;
+          width: 28% !important;
+        }
+
+        .header-image {
+          position: absolute;
+          z-index: 600;
+          top: 70px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .carousel-item {
+          height: 99.5vh;
+          min-height: 300px;
+        }
+        .carousel-caption {
+          bottom: 220px;
+          z-index: 2;
+        }
+        .carousel-caption h5 {
+          font-size: 45px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-top: 25px;
+        }
+        .carousel-caption p {
+          width: 60%;
+          margin: auto;
+          font-size: 18px;
+          line-height: 1.8;
+        }
+        .carousel-caption a {
+          text-transform: uppercase;
+          text-decoration: none;
+          background: #1977cc;
+          padding: 5px 20px;
+          display: inline-block;
+          color: #fff;
+          margin-top: 15px;
+          border-radius: 5px;
+        }
+        .carousel-inner:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.4);
+          z-index: 1;
+        }
+        
+    </style>
+  </head>
+  <body>
+
+<div class="wrapper">
+    <!-- header -->
+     <header class="header">
+      <nav class="navbar navbar-light" style="background-color: #262626;display:grid;justify-content: center;">
+        <div class="container">
+            <span class="text-white">21-23 Februari 2025</span>
+            <span class="text-white" style="margin:8px"> • </span>
+            <span class="text-white" style="border-right: 1px solid #FDA9B1;padding-right: 16px;">Jakarta</span>
+            <span class="medsos" style="margin-left: 16px;">
+              <a href="#" target="_blank" style="text-decoration:none"><i class="fa-brands fa-facebook text-white" style="margin-right: 10px;margin-left:4px;"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-instagram text-white" style="margin-right: 10px;"></i></a>
+              <i class="fa-brands fa-tiktok text-white" style="margin-right: 10px;"></i>
+              <a href="#" target="_blank"><i class="fa-brands fa-youtube text-white" style="margin-right: 10px;"></i></a>
+            </span>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg p-md-3" style="background-color: #B90000;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/logoire.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" style="gap: 30px">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">EXPO INFO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">BRANDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">PARTNERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/speakers.html">SPEAKERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">AMBASSADORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <button class="btn" type="submit" style="background-color: white;border-radius: 20px;">REGISTRATION</i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    </header>
+   
+    <!-- banner content-->
+    <div class="carousel-container">
+        <div id="carouselExampleSlideOnly" class="carousel1 carousel slide" data-ride="carousel">
+               <div class="carousel-inner" style=" min-width: 100%;height: 400px;">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="img/runner.png"
+                            style=" min-width: 100%;height: 400px;">
+                            <div class="carousel-caption" style="top:130px !important">
+                              <h5 class="animated fadeInDown" style="animation-delay: 1s">EXHIBITORS</h5>
+                              <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--Content-->
+<div class="container mt-4 mb-4">
+  <div class="speakers-container" style="display: grid;row-gap: 24px;grid-template-columns: repeat(6,1fr);-webkit-box-align: center;-ms-flex-align: center;align-items: center;justify-items: center;">
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+        <img src="img/sponsor1.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+      </figure>
+        <h5 class="card-text">ASICS</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+        <img src="img/sponsor2.webp" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+      </figure>
+        <h5 class="card-text">HOKA</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+    <figure>
+      <img src="img/sponsor3.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+      <h5 class="card-text">361</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor4.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>  
+      <h5 class="card-text">ALTRA</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+    <figure>  
+      <img src="img/sponsor5.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">HARRIER</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+      
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor6.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">NIKE</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor7.svg" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Reebok</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+      
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor8.svg" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+      </figure>
+        <h5 class="card-text">Under Armour</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor9.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Columbia</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor10.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+      </figure>
+        <h5 class="card-text">Adidas</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor11.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+      </figure>
+        <h5 class="card-text">PUMA</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor12.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Asics</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor13.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">On Cloud</h5>
+        <h6 class="text-dark"> Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+    <figure>
+      <img src="img/sponsor14.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Mizuna</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+      
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+    <figure> 
+      <img src="img/sponsor15.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure> 
+        <h5 class="card-text">New Balance</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+    <figure>
+      <img src="img/sponsor16.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure> 
+        <h5 class="card-text">Salomon</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure></figure>
+      <img src="img/sponsor17.png" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Brooks</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+    
+    </div>
+    <div class="card card-exhibition card-effect bounceInUp">
+      <figure>
+      <img src="img/sponsor18.webp" class="card-img img-exhibitor mt-4" alt="..." style="margin-right: auto;margin-left: auto;">
+    </figure>
+        <h5 class="card-text">Montane</h5>
+        <h6 class="text-dark">Exhibitons</h6>
+  
+    </div>
+  </div>
+</div>
+
+</div>
+
+        <!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  
+          <div class="titleLogin text-center">
+            <img src="/img/logo_trekka.png" style="width:50px;">
+            <h3>SIGN IN</h3>
+          </div>
+  
+          <form action="/action_page.php">
+            
+            <div class="form-login">
+              <label for="email">Username or email</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-envelope"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+            </div>
+  
+            <div class="form-password mt-2">
+              <label for="pwd">Password</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-lock"></i></span>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+            </div>
+  
+            <div class="forgot-password mt-2">
+              <a href="#">
+                <p style="font-size:0.8rem">Forgot Password?</p>
+              </a>
+            </div>
+  
+          </form>
+          <div class="button-login mt-5 text-center">
+            <button type="button" class="btn" style="background-color: white;color: #05223d;" data-bs-toggle="modal" data-bs-target="#modalSignup" data-bs-dismiss="modal">Create Account</button>
+            <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d; min-width: 150px;">Login</button>
+          </div>
+  
+          <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        
+         </div>
+      </div>
+    </div>
+  </div>
+  
+<!--Modal Sign Up-->
+<div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="logo-signup" style="text-align:left"><img src="/img/logo_baru.png" style="width:100px;"></div>
+          </div>
+
+          <div class="col-6">
+            <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          
+        </div>
+
+        
+        <h3 class="text-center">SIGN UP</h3>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-firstname">
+                    <label for="uname">First Name</label>
+                    <input type="name" class="form-control" id="firstname" placeholder="Enter Firstname" name="firstname">
+                  </div>
+                </div>
+                <div class="col-lastname col-md-6">
+                  <div class="form-username">
+                    <label for="uname">Last Name</label>
+                    <input type="name" class="form-control" id="lastname" placeholder="Enter Lastname" name="lastname">
+                  </div>
+                </div>
+              </div>
+
+            <div class="select-jenisKelamin mt-2">
+              <label for="jenisKelamin">Gender</label>
+              <select class="form-select" aria-label="Select Jenis Kelamin">
+                <option selected>Select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+            </div>
+
+            <div class="form-lahir mt-2">
+              <label for="tanggalLahir">Birthday</label>
+              <input id="tanggalLahir" class="form-control" type="date"/>
+            </div>
+
+            <div class="select-negara mt-2">
+              <label for="negara">Country</label>
+              <select class="form-select" aria-label="Select Negara">
+                <option selected>Select</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Belanda</option>
+                <option value="1">Jepang</option>
+                <option value="2">Australia</option>
+              </select>
+            </div>
+
+
+            </div>
+            <div class="col-signup col-md-6 col-12">
+              <div class="form-username">
+                <label for="uname">Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Enter Username" name="uname">
+              </div>
+
+              <div class="form-email mt-2">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+
+              <div class="form-password mt-2">
+                <label for="pwd">Password</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+    
+              <div class="form-verif-password mt-2">
+                <label for="pwd2">Confirm Password</label>  
+                <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pwd2">
+              </div>
+            
+            </div>
+            
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-login mt-4 text-center">
+          <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d;">Create Account</button>
+        </div>
+
+        <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        <p class="text-center mt-1" style="font-size:0.8rem">Already have an account?<a href="" data-bs-toggle="modal" data-bs-target="#modalLogin" data-bs-dismiss="modal"> Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <footer>
+        <div class="footer-top text-white">
+          <div class="container">
+            <footer class="py-5">
+              <div class="row" style="justify-content: center;">
+                <div class="col-4 col-md-2 mb-3">
+                  <h5 style="font-weight: bold;">Expo Info</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Expo Info</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Brands</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-4 col-md-2 mb-3">
+                  <h5 style="font-weight: bold;">Speakers</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Speakers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Ambassadors</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-4 col-md-2 mb-3">
+                  <h5 style="font-weight: bold;">Partners</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+                <p class="text-center">©Indonesia Running Expo 2025</p>
+              </div>
+            </footer>
+          </div>   
+      </div> 
+    </footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script type="text/javascript">
+
+      function myFunction() {
+            var input, filter, cards, cardContainer, h5, title, i;
+            input = document.getElementById("myFilter");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("myItems");
+            cards = cardContainer.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].querySelector(".card-body h5.card-title");
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
