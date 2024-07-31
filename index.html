@@ -132,9 +132,22 @@
         }
 
         .logo_crs {
-          height: 260px;
+          /* height: 260px; */
           padding: 2px 10px;
           width: 75% !important;
+        }
+
+        .img-logo2 {
+          padding: 55px 10px;
+          width: 35% !important;
+        }
+
+        .logo-about{
+          padding-top: 45px;
+          padding-bottom: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
+          width: 13% !important;
         }
 
         .header-image {
@@ -188,9 +201,14 @@
         }
 
       .logo{
-            height: 90px;
+            height: 73px;
             padding: 1px 10px;
         }
+
+      .text-about {
+        padding-right: 100px;
+        padding-left: 100px;
+      }
         
     </style>
   </head>
@@ -199,8 +217,8 @@
 <div class="wrapper">
 
     <!-- header -->
-    <nav class="navbar navbar-light" style="background-color: #262626;display:grid;justify-content: center;">
-        <div class="container">
+    <nav class="navbar navbar-light" style="background-color: #B90000;display:grid;justify-content: center;height: 100px;">
+        <div class="container" style="font-size: 26px;">
             <span class="text-white">21-23 Februari 2025</span>
             <span class="text-white" style="margin:8px"> • </span>
             <span class="text-white" style="border-right: 1px solid #FDA9B1;padding-right: 16px;">Jakarta</span>
@@ -213,7 +231,7 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg p-md-3" style="background-color: #B90000;">
+    <nav class="navbar navbar-expand-lg navbar-light p-md-3">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -224,32 +242,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto" style="gap: 20px">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="/irexpo/info_expo.html">INFO EXPO</a>
+              <a class="nav-link text-dark" aria-current="page" href="/irexpo/info_expo.html">INFO EXPO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/irexpo/exhibitors.html">EXHIBITOR</a>
+              <a class="nav-link text-dark" href="/irexpo/exhibitors.html">EXHIBITOR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">PARTNER</a>
+              <a class="nav-link text-dark" href="#">PARTNER</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/irexpo/speakers.html">PEMBICARA</a>
+              <a class="nav-link text-dark" href="/irexpo/speakers.html">PEMBICARA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">AMBASADOR</a>
+              <a class="nav-link text-dark" href="#">AMBASADOR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">RACE</a>
+              <a class="nav-link text-dark" href="#">RACE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">BERITA</a>
+              <a class="nav-link text-dark" href="#">BERITA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">KONTAK</a>
+              <a class="nav-link text-dark" href="#">KONTAK</a>
             </li>
             <li class="nav-item">
               <form class="d-flex">
-                <button class="btn" type="submit" style="background-color: white;border-radius: 20px;">REGISTRASI</i></button>
+                <button class="btn text-white" type="submit" style="background-color: #B90000;border-radius: 20px;">REGISTRASI</i></button>
               </form>
             </li>
           </ul>
@@ -263,37 +281,75 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/runner.png"style=" min-width: 100%;height: 800px;">
+          <img class="d-block w-100" src="img/runner.png"style=" min-width: 100%;height: 100%;">
                               <div class="carousel-caption">
                                 <img class="logo_crs" src="img/logoire.png" alt="">
-                                <h4 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h4>
-                                <h4 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h4>
-                                <p class="animated fadeInUp" style="animation-delay: 3s;"><a class="btn btn-lg" href="#" style="border-radius: 30px;background-color: #ffff;color: black;align-content:center;height:50px;">Registrasi</a></p>
+                                <h2 class="txt_crs animated fadeInDown" style="animation-delay: 1s;letter-spacing: 17px;">EXHIBITION - SEMINARS - RACE</h2>
+                                <h3 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h3>
+                                <h3 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h3>
                               </div>
         </div>
         <div class="carousel-item">
            <img class="d-block w-100" src="img/runner2.jpg"
-                              style=" min-width: 100%;height: 800px;">
+                              style=" min-width: 100%;height: 100%">
                               <div class="carousel-caption">
                                 <img class="logo_crs" src="img/logoire.png" alt="">
-                                <h4 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h4>
-                                <h4 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h4>
-                                <p class="animated fadeInUp" style="animation-delay: 3s;"><a class="btn btn-lg" href="#" style="border-radius: 30px;background-color: #ffff;color: black;align-content:center;height:50px;">Registrasi</a></p>
-                              </div>
+                                <h2 class="txt_crs animated fadeInDown" style="animation-delay: 1s;letter-spacing: 17px;">EXHIBITION - SEMINARS - RACE</h2>
+                                <h3 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h3>
+                                <h3 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h3>
+                             </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="img/runner3.jpg"
-                              style=" min-width: 100%;height: 800px;">
+                              style=" min-width: 100%;height: 100%;">
                               <div class="carousel-caption">
                                 <img class="logo_crs" src="img/logoire.png" alt="">
-                                <h4 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h4>
-                                <h4 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h4>
-                                <p class="animated fadeInUp" style="animation-delay: 3s;"><a class="btn btn-lg" href="#" style="border-radius: 30px;background-color: #ffff;color: black;align-content:center;height:50px;">Registrasi</a></p>
-                              </div>
+                                <h2 class="txt_crs animated fadeInDown" style="animation-delay: 1s;letter-spacing: 17px;">EXHIBITION - SEMINARS - RACE</h2>
+                                <h3 class="txt_crs animated fadeInDown" style="animation-delay: 1s">21 - 23 Februari 2025</h3>
+                                <h3 class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Jakarta</h3>
+                             </div>
       </div>
       </div>
     </div>
           
+
+    <section id="about-ire" class="about-ire" style="background-color: #262626;padding-bottom: 85px;">
+      <div class="container">
+        <div class="row">
+          <div class="img-logo" style="display: grid;justify-content: center;">
+            <img class="img-logo2" src="img/logoire2.png" style="margin-right: auto;margin-left: auto;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+             <div class="card" style="background-color: #B90000;width: 100%;height: 335px;">
+              <div class="row image-about"  style="justify-content: center;">
+                <img class="logo-about" src="img/logo-about1.png">
+              </div>
+              <div class="text-about text-center text-white mt-1">
+                <h5>Bagaimana cara memesan tiket Anda untuk menghadiri acara tersebut? Klik Tautan <br>"Tiket IRE" ini atau buka Halaman “Registrasi Expo".</h5>
+              </div>
+              <div class="button-about mx-auto mt-3">
+                <button class="btn text-white" style="background-color: #262626;">REGISTRASI EXPO</button>
+              </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="background-color: #B90000;width: 100%;height: 335px;">
+              <div class="row image-about"  style="justify-content: center;">
+                <img class="logo-about" src="img/logo-about2.png">
+              </div>
+              <div class="text-about text-center text-white mt-1">
+                <h5>Bagaimana cara memesan tiket saya untuk perlombaan Indonesia Running Expo ? Klik Tautan "IRE Race" ini atau buka Halaman “Registrasi Race”.</h5>
+              </div>
+              <div class="button-about mx-auto mt-3">
+                <button class="btn text-white" style="background-color: #262626;">REGISTRASI RACE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
           
            <!-- PROJECTS -->
     <section id="races" style="background-color: #ffff;">
@@ -500,8 +556,8 @@
        <!-- SPEAKERS -->
        <section id="services" style="background-color: #262626;">
         <div class="container_race container">
-            <div class="row mb-5 mt-5">
-                <div class="col-md-8 mx-auto text-center text-white mt-3">
+            <div class="row mb-5 mt-3">
+                <div class="col-md-8 mx-auto text-center text-white">
                     <h1>Pembicara</h1>
                 </div>
             </div>
