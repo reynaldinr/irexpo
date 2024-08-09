@@ -1,0 +1,1432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+    <!-- css-->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+
+    <title>Indonesia Running Expo 2025</title>
+    <style>
+      @media only screen and (max-width: 767px) {
+         .img_crs {
+           width:300% !important;
+         }
+         
+         .col-e {
+             margin-top:0.5rem;
+         }
+         
+         .txt_crs {
+             font-size:43px !important;
+         }
+ 
+         .owl-prev {
+           left: -1rem !important;
+         }
+ 
+         .owl-next {
+           right: -1rem !important;
+         }
+         .med-sos{
+             text-align: center !important;
+         }
+         
+         .contact-us{
+             margin-top:1rem;
+             text-align: center !important;
+         }
+         }
+                 
+         .bg-secondary{
+         background-color: #246d8e !important;
+         }
+ 
+         
+         .btn-login{
+             margin-right: auto;
+             margin-left: auto;
+         }
+         .owl-prev,
+         .owl-next {
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+         }
+ 
+         .owl-prev {
+           left: -2rem;
+         }
+ 
+         .owl-next {
+           right: -2rem;
+         }
+         
+         .nav_links {
+           color: white;
+         }
+ 
+         .speaker-tags {
+           margin: -11px 0 0 10px;
+         }
+ 
+         .img-exhibitor {
+           max-height: 75px;
+           width: 90px!important;
+           min-width: 90px;
+           min-height: 75px;
+         }
+ 
+       .footer-top {
+           padding-top: 50px;
+           padding-bottom: 50px;
+           background-color:#b90000;;
+       }
+ 
+         .card-exhibition {
+           background-position: 50% !important;
+           background-repeat: no-repeat !important;
+           background-size: calc(100% - 20px) !important;
+           /* border: 4px solid rgba(24,24,43,.06)!important;
+             border-top-color: rgba(24, 24, 43, 0.06)!important;
+             border-right-color: rgba(24, 24, 43, 0.06)!important;
+             border-bottom-color: rgba(24, 24, 43, 0.06)!important;
+             border-left-color: rgba(24, 24, 43, 0.06)!important; */
+           border-radius: 54px!important;
+           -webkit-box-shadow: 4px 8px 15px rgba(24,24,43,.16)!important;
+           box-shadow: 4px 8px 15px rgba(24,24,43,.16)!important;
+           -webkit-box-sizing: border-box!important;
+           box-sizing: border-box!important;
+           display: grid!important;
+           line-height: 1!important;
+           padding: 10px!important;
+           text-decoration: none!important;
+           -webkit-transition: .5s!important;
+           transition: .5s!important;
+           width: 100%!important;
+           width: 200px!important;
+           -webkit-box-pack: center !important;
+           -ms-flex-pack: center!important;
+           justify-content: center!important;
+           justify-items: center!important;
+           word-wrap: anywhere;
+         }
+ 
+         .logo_crs {
+           height: 260px;
+           padding: 2px 10px;
+           width: 75% !important;
+         }
+ 
+         .header-image {
+           position: absolute;
+           z-index: 600;
+           top: 70px;
+           bottom: 0;
+           left: 0;
+           right: 0;
+         }
+ 
+         .carousel-item {
+           height: 99.5vh;
+           min-height: 300px;
+         }
+         .carousel-caption {
+           bottom: 220px;
+           z-index: 2;
+         }
+         .carousel-caption h5 {
+           font-size: 45px;
+           text-transform: uppercase;
+           letter-spacing: 2px;
+           margin-top: 25px;
+         }
+         .carousel-caption p {
+           width: 60%;
+           margin: auto;
+           font-size: 18px;
+           line-height: 1.8;
+         }
+         .carousel-caption a {
+           text-transform: uppercase;
+           text-decoration: none;
+           background: #1977cc;
+           padding: 5px 20px;
+           display: inline-block;
+           color: #fff;
+           margin-top: 15px;
+           border-radius: 5px;
+         }
+         .carousel-inner:before {
+           content: '';
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           top: 0;
+           left: 0;
+           background: rgba(0, 0, 0, 0.4);
+           z-index: 1;
+         }
+ 
+       .logo{
+             height: 60px;
+             padding: 1px 10px;
+         }
+
+    #progress-bar-container li .step-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+  color: #444;
+}
+
+#progress-bar-container li::after {
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #777;
+  margin: auto;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.25s;
+}
+#progress-bar-container li:hover::after {
+  background: #555;
+}
+
+#progress-bar-container li.active::after {
+  background: #207893;
+}
+
+#progress-bar-container #line {
+  width: 80%;
+  margin: auto;
+  background-color: #eee;
+  height: 6px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.75s;
+}
+
+#progress-bar-container #line-progress {
+  content: " ";
+  width: 14%;
+  height: 100%;
+  background-color: #207893;
+  background: linear-gradient(to right #207893 0%, #2ea3b7 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+}
+#progress-content-section {
+  position: relative;
+  top: 100px;
+  width: 90%;
+  margin: auto;
+  background: #f3f3f3;
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+#progress-content-section .section-content {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.section-content p {
+  font-size: 16px;
+  line-height: 1.8rem;
+  color: #777;
+}
+
+.section-content {
+  display: none;
+  animation: FadeinUp 0.7s ease 1 forwards;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.section-content.active {
+  display: block;
+  opacity: 1;
+}
+.progress-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+#progress-bar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  margin-top: 65px;
+}
+#progress-bar-container ul {
+  padding-top: 15px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+#progress-bar-container li::before {
+  content: " ";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  transition: all ease 0.3s;
+}
+
+#progress-bar-container li.active::before,
+#progress-bar-container li:hover::before {
+  border: 2px solid #fff;
+  background-color: crimson;
+}
+#progress-bar-container li {
+  list-style: none;
+  float: left;
+  width: 33%;
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 60px;
+  position: relative;
+}
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+         
+     </style>
+  </head>
+  <body>
+
+<div class="wrapper">
+    <!-- header -->
+     <header class="header">
+      <nav class="navbar navbar-light" style="background-color: #B90000;display:grid;justify-content: center;height: 100px;">
+        <div class="container" style="font-size: 22px;">
+            <span class="text-white">21-23 Februari 2025</span>
+            <span class="text-white" style="margin:8px"> • </span>
+            <span class="text-white" style="border-right: 1px solid #FDA9B1;padding-right: 16px;">Jakarta</span>
+            <span class="medsos" style="margin-left: 16px;">
+              <a href="#" target="_blank" style="text-decoration:none"><i class="fa-brands fa-facebook text-white" style="margin-right: 10px;margin-left:4px;"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-instagram text-white" style="margin-right: 10px;"></i></a>
+              <i class="fa-brands fa-tiktok text-white" style="margin-right: 10px;"></i>
+              <a href="#" target="_blank"><i class="fa-brands fa-youtube text-white" style="margin-right: 10px;"></i></a>
+            </span>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light p-md-3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/irexpo/">
+          <img class="logo" src="img/logoire.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" style="gap: 20px">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="/irexpo/info_expo.html">INFO EXPO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/irexpo/exhibitors.html">EXHIBITOR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">PARTNER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/irexpo/speakers.html">PEMBICARA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">AMBASADOR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">RACE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">BERITA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/irexpo/contact.html">KONTAK</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <button class="btn text-white" type="submit" style="background-color: #B90000;border-radius: 20px;">REGISTRASI</i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    </header>
+   
+        <section id="diagram-exhibitors" style="background-color: #262626;">
+          <div class="row">
+            <div class="image-container mx-auto mt-5 mb-5" style="max-width: 700px;">
+             
+              <div class="progress-wrapper">
+                <div id="progress-bar-container">
+                  <ul>
+                    <li class="step step01 active">
+                      <div class="step-inner text-white">Step 1</div>
+                    </li>
+                    <li class="step step02">
+                      <div class="step-inner text-white">Step 2</div>
+                    </li>
+                    <li class="step step03">
+                      <div class="step-inner text-white">Step 3</div>
+                    </li>
+                  </ul>
+                  <div id="line">
+                    <div id="line-progress"></div>
+                  </div>
+                  <!-- progress-bar-container -->
+                  <div id="progress-content-section">
+                    <div class="section-content step1 active">
+                      <h2>Step 1</h2>
+                      <div id="frm-submit1">
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Race Category
+                            </strong>
+                          </label>
+                          <select class="form-control" name="race_cat" id="frm-submit1-race-cat">
+                            <option value="">
+                              -Select-
+                            </option>
+                            <option value="M">
+                              Male
+                            </option>
+                            <option value="F">
+                              Female
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              First Name
+                            </strong>
+                          </label><input class="form-control" type="text" name="first_name" id="frm-submit1-first-name">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Last Name
+                            </strong>
+                          </label><input class="form-control" type="text" name="last_name" id="frm-submit1-last-name">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              BIB Name
+                            </strong>
+                          </label><input class="form-control" type="text" name="bib_name" id="frm-submit1-bib-name">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Email
+                            </strong>
+                          </label><input class="form-control" type="text" name="email" id="frm-submit1-email">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Birth Place
+                            </strong>
+                          </label><input class="form-control" type="text" name="birth_place" id="frm-submit1-birth-place">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Birth Date
+                            </strong>
+                          </label><input class="form-control" type="date" name="birth_date" id="frm-submit1-birth-date">
+                          <input type="hidden" name="age" id="frm-submit1-age" value="0">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Gender
+                            </strong>
+                          </label>
+                          <select class="form-control" name="gender" id="frm-submit1-gender">
+                            <option value="">
+                              -Select-
+                            </option>
+                            <option value="M">
+                              Male
+                            </option>
+                            <option value="F">
+                              Female
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Blood
+                            </strong>
+                          </label>
+                          <select class="form-control" name="blood" id="frm-submit1-blood">
+                            <option value="">
+                              -Select-
+                            </option>
+                            <option value="O+">
+                              O+
+                            </option>
+                            <option value="O-">
+                              O-
+                            </option>
+                            <option value="A+">
+                              A+
+                            </option>
+                            <option value="A-">
+                              A-
+                            </option>
+                            <option value="B+">
+                              B+
+                            </option>
+                            <option value="B-">
+                              B-
+                            </option>
+                            <option value="AB+">
+                              AB+
+                            </option>
+                            <option value="AB-">
+                              AB-
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Tshirt Size
+                            </strong>
+                          </label>
+                          <select class="form-control" name="tshirt_size" id="frm-submit1-tshirt-size">
+                            <option value="">
+                              -Select-
+                            </option>
+                            <option value="" selected="selected">
+                              - Tshirt size -
+                            </option>
+                            <option value="XS">
+                              XS (chest width 45 cm)
+                            </option>
+                            <option value="S">
+                              S (chest width 47.5 cm)
+                            </option>
+                            <option value="M">
+                              M (chest width 50 cm)
+                            </option>
+                            <option value="L">
+                              L (chest width 52.5 cm)
+                            </option>
+                            <option value="XL">
+                              XL (chest width 55 cm)
+                            </option>
+                            <option value="XXL">
+                              XXL (chest width 57.5 cm)
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              ID Type
+                            </strong>
+                          </label>
+                          <select class="form-control" name="id_type" id="frm-submit1-id-type">
+                            <option value="" selected="selected">
+                              - ID Type -
+                            </option>
+                            <option value="id">
+                              ID
+                            </option>
+                            <option value="passport">
+                              Passport
+                            </option>
+                            <option value="kitas">
+                              KITAS
+                            </option>
+                            <option value="kitap">
+                              KITAP
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              ID (KTP / PASSPORT / KITAS / KITAP)
+                            </strong>
+                          </label><input class="form-control" type="text" name="id_number" id="frm-submit1-id-number">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Nationality
+                            </strong>
+                          </label>
+                          <select class="form-control" name="nationality" id="frm-submit1-nationality">
+                            <option value="">
+                              -Select-
+                            </option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Team/Sponsor
+                              <span class='text-muted'>
+      
+                              </span>
+                            </strong>
+                          </label><input class="form-control" type="text" name="team_sponsor" id="frm-submit1-team-sponsor">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Address
+                            </strong>
+                          </label><input class="form-control" type="text" name="address" id="frm-submit1-address">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              City
+                            </strong>
+                          </label><input class="form-control" type="text" name="city" id="frm-submit1-city">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Province
+                            </strong>
+                          </label><input class="form-control" type="text" name="province" id="frm-submit1-province">
+                        </div>
+                        
+                          <!--<div class="form-group">-->
+                          <!--<label>-->
+                          <!--<strong>-->
+                          <!--Country-->
+                          <!--</strong>-->
+                          <!--</label><input class="form-control" type="text" name="country" id="frm-submit1-country">-->
+                          <!--</div>-->
+                          
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Country
+                            </strong>
+                          </label>
+                          <select class="form-control" name="country" id="frm-submit1-country">
+                            <option value="">
+                              -Select-
+                            </option>
+                          
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Post Code
+                            </strong>
+                          </label><input class="form-control" type="text" name="post_code" id="frm-submit1-post-code">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Mobile Phone
+                            </strong>
+                          </label><input class="form-control" type="text" name="mobile_phone" id="frm-submit1-mobile-phone">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Emergency Name
+                            </strong>
+                          </label><input class="form-control" type="text" name="emergency_name" id="frm-submit1-emergency-name">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <strong>
+                              Emergency Phone
+                            </strong>
+                          </label><input class="form-control" type="text" name="emergency_phone" id="frm-submit1-emergency-phone">
+                        </div>
+                        <div id="div-race-result-link" class="form-group" style="display:none;">
+                          <label>
+                            <strong>
+                              Race Qualification (Fill your RACE RESULT link here (URL))
+                            </strong>
+                          </label><input class="form-control" type="text" name="race_result_link" id="frm-submit1-race-result-link">
+                          <input type="hidden" name="include_race_result_link" value="N" id="frm-submit1-include-race-result-link">
+                        </div>
+                        <div class="form-group" id="div-donation-idr" style="display: none;">
+                          <label>
+                            <strong>
+                              Donation (Environment Crowdfunding)
+                            </strong>
+                          </label>
+                          <select class="form-control" name="donation_idr" id="frm-submit1-donation-idr">
+                            <option value="0">
+                              No
+                            </option>
+                            <option value="5000">
+                              IDR 5,000
+                            </option>
+                            <option value="10000">
+                              IDR 10,000
+                            </option>
+                            <option value="25000">
+                              IDR 25,000
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group" id="div-donation-usd" style="display: none;">
+                          <label>
+                            <strong>
+                              Donation (Environment Crowdfunding)
+                            </strong>
+                          </label>
+                          <select class="form-control" name="donation_usd" id="frm-submit1-donation-usd">
+                            <option value="0">
+                              No
+                            </option>
+                            <option value="5000">
+                              IDR 5,000
+                            </option>
+                            <option value="10000">
+                              IDR 10,000
+                            </option>
+                            <option value="25000">
+                              IDR 25,000
+                            </option>
+                          </select>
+                        </div>
+      
+                        <input type="hidden" name="donation_type" id="frm-submit1-donation-type" value="">
+      
+                        <div style="display: none;" id="div-the-waiver">
+                          <span class="text-danger">
+                            *
+                          </span>Please download the waiver and release agreement here: 	
+                              <a href="<?= base_url('assets/document/BUT2023 - Waiver and Release Agreement (ENG).pdf'); ?>" download="BUT2023 - Waiver and Release Agreement (ENG).pdf" style="text-decoration: underline">
+                                <strong>
+                                  <span>
+                                    ENG
+                                  </span>
+                                </strong>
+                              </a> or
+                              <a href="<?= base_url('assets/document/BUT2023 - Waiver and Release Agreement (IND).pdf'); ?>" download="BUT2023 - Waiver and Release Agreement (IND).pdf" style="text-decoration: underline">
+                                <strong>
+                                  <span>
+                                    IND
+                                  </span>
+                                </strong>
+                              </a>
+                        </div>
+      
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="frm-submit1-check-rule">
+                          <label class="form-check-label">
+                            <a href="#" id="link-modal-rule">
+                              I have read, understood and read the waiver and release aggrement.
+                            </a>
+                          </label>
+                        </div>
+      
+      
+      
+                        <div class="form-group text-right">
+      
+                          <button class="btn btn-primary btn-submit" id="frm-submit1-btn-submit" type="submit" style="background-color:#7F141a;border-color:#7F141a;">
+                            Next
+                          </button>
+                          <button class="btn btn-primary loading-btn-submit" type="button" disabled style="display: none;">
+                            <i>
+                              Wait..
+                            </i>
+                          </button>
+                        </div>
+      
+      
+                      </div>
+                    </div>
+                    <div class="section-content step2">
+                      <h2>Step 2</h2>
+                      <div id="frm-submit2">
+                        <div class="alert alert-danger" id="frm-submit2-alert-danger" style="display: none;">
+                          <h4>
+                            <strong>
+                              Oops, something when wrong.
+                            </strong>
+                          </h4>
+                          <div id="frm-submit2-div-alert-danger">
+      
+                          </div>
+                        </div>
+                        <div class="form-group" style="background-color: #007bff; color: white; padding: 10px; display: none;">
+                          <label>
+                            <strong>
+                              Do you want to take accommodation?
+                            </strong>
+                          </label>
+      
+                          <div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input ask-hotel" type="radio" name="ask_hotel" value="Y" id="ask_hotel_yes">
+                              <label class="form-check-label" for="ask_hotel_yes">
+                                <strong>
+                                  Yes
+                                </strong>
+                              </label>
+                            </div>
+      
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input ask-hotel" type="radio" name="ask_hotel" value="N" id="ask_hotel_no" checked>
+                              <label class="form-check-label" for="ask_hotel_no">
+                                <strong>
+                                  No
+                                </strong>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div id="div-hotel-package" style="display: none;">
+                          <div class="form-group">
+                            <label>
+                              <strong>
+                                Hotel Package
+                              </strong>
+                            </label>
+                            <div>
+                              <?php
+                              $i = 0;
+                              foreach ($pack_cat_arr as $pack_cat) {
+                                $i++;
+                              ?>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input pack-hotel" type="radio" id="pack_hotel<?php echo $i; ?>" name="pack_hotel" value="<?php echo $pack_cat['pack_cat']; ?>">
+                                  <label class="form-check-label" for="pack_hotel<?php echo $i; ?>">
+                                    <?php echo $pack_cat['pack_cat_nm']; ?>
+                                  </label>
+                                </div>
+                              <?php
+                              } ?>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <?php
+                              $i = 0;
+                              foreach ($hotel_list->result() as $d) {
+                                $i++;
+                              ?>
+                                <div class="col-md-4 mb-5 pack-cat pack-cat-<?php echo $d->pack_cat; ?>" style="display: none;">
+                                  <div class="text-center">
+                                    <img src="<?php echo base_url('assets/img/hotel/' . $d->hotel_logo); ?>">
+                                  </div>
+                                  <div class="text-center">
+                                    <input type="radio" name="hp_id" id="hp-id<?php echo $i; ?>" value="<?php echo $d->hp_id; ?>">
+                                    <label for="hp-id<?php echo $i; ?>">
+                                      IDR <?php echo number_format($d->price); ?>/USD <?php echo number_format($d->price_usd); ?>
+                                    </label>
+                                  </div>
+                                </div>
+                              <?php
+                              }
+                              ?>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="form-group" style="background-color: #007bff; color: white; padding: 10px;">
+                          <label>
+                            <strong>
+                              Please select for transportation arrangement.
+                            </strong>
+                          </label>
+      
+                          <div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input ask-transportation" type="radio" name="ask_transportation" value="Y" id="ask_transportation_yes">
+                              <label class="form-check-label" for="ask_transportation_yes">
+                                <strong>
+                                  Yes
+                                </strong>
+                              </label>
+                            </div>
+      
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input  ask-transportation" type="radio" name="ask_transportation" value="N" id="ask_transportation_no">
+                              <label class="form-check-label" for="ask_transportation_no">
+                                <strong>
+                                  No
+                                </strong>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div id="div-transportation" style="display: none;">
+                          <?php $i = 0; ?>
+      
+                           <!--Nav tabs -->
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#going">
+                                Airport to Race Village
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#return">
+                                Race Village to Airport
+                              </a>
+                            </li>
+                          </ul>
+      
+      
+                           <!--Tab panes -->
+                          <div class="tab-content">
+                            <div id="going" class="container tab-pane active">
+                              <div class="form-group pt-2">
+                                <label>
+                                  <strong>
+                                    Bus Transportation
+                                  </strong>
+                                  <div>
+                                    Bus route from airport to race village:
+                                  </div>
+                                  <div>
+                                    Airport - Ubud (Central) - Kintamani(Geopark Museum) - Kintamani (Race Village)
+                                  </div>
+                                </label>
+                                <div>
+                                  <table class="table table-bordered table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                          &nbsp;
+                                        </th>
+                                        <th>
+                                          Date Time
+                                        </th>
+                                        <th>
+                                          To
+                                        </th>
+                                        <th>
+                                          Price
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <input type="hidden" name="berangkat_check" value="false">
+                                      <?php
+                                      $i = 0;
+                                      foreach ($transportation_list1->result() as $transportation) {
+                                        $i++;
+                                        if ($i == 7) {
+                                          $border_top = "border-top-width: 7px; border-top-style: solid;";
+                                        } else {
+                                          $border_top = "";
+                                        }
+                                      ?>
+                                        <tr style="<?php echo $border_top; ?>">
+                                          <td style="text-align: center;">
+                                            <input class="transportation-id" type="radio" id="transportation-id-go<?php echo $i; ?>" name="transportation_berangkat" value="<?php echo $transportation->transportation_id; ?>">
+                                          </td>
+                                          <td>
+                                            <?php echo date('d/M/Y, H:i', strtotime($transportation->date_time));  ?>
+                                          </td>
+                                          <td>
+                                            <?php echo $transportation->to; ?>
+                                          </td>
+                                          <td>
+                                            <span class="span-transportation-price-idr">
+                                              IDR <?php echo number_format($transportation->price); ?>
+                                            </span>
+                                            <span class="span-transportation-price-usd">
+                                              IDR <?php echo number_format($transportation->price_usd); ?>
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      <?php
+                                      } ?>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="return" class="container tab-pane fade">
+                              <div class="form-group pt-2">
+                                <label>
+                                  <strong>
+                                    Bus Transportation
+                                  </strong>
+                                  <div>
+                                    Bus route from race village to airport:
+                                  </div>
+                                  <div>
+                                    Kintamani (Race Village) - Kintamani (Geopark Museum) - Ubud (Central) - Airport
+                                  </div>
+                                </label>
+                                <div>
+      
+                                  <table class="table table-bordered table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                          &nbsp;
+                                        </th>
+                                        <th>
+                                          Date Time
+                                        </th>
+                                        <th>
+                                          From
+                                        </th>
+                                        <th>
+                                          Price
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <input type="hidden" name="pulang_check" value="false">
+                                      <?php
+                                      $i = 0;
+                                      foreach ($transportation_list2->result() as $transportation) {
+                                        $i++;
+                                        if ($i == 7) {
+                                          $border_top = "border-top-width: 7px; border-top-style: solid;";
+                                        } else {
+                                          $border_top = "";
+                                        }
+                                      ?>
+                                        <tr style="<?= $border_top ?>">
+                                          <td style="text-align: center;">
+                                            <input class="transportation-id" type="radio" id="transportation-id-back<?php echo $i; ?>" name="transportation_pulang" value="<?php echo $transportation->transportation_id; ?>">
+                                          </td>
+                                          <td>
+                                            <?php echo date('d/M/Y, H:i', strtotime($transportation->date_time));  ?>
+                                          </td>
+                                          <td>
+                                            <?php echo $transportation->from; ?>
+                                          </td>
+                                          <td>
+                                            <span class="span-transportation-price-idr">
+                                              IDR <?php echo number_format($transportation->price); ?>
+                                            </span>
+                                            <span class="span-transportation-price-usd">
+                                              IDR <?php echo number_format($transportation->price_usd); ?>
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      <?php
+                                      } ?>
+                                    </tbody>
+                                  </table>
+      
+      
+      
+                                </div>
+      
+                              </div>
+                            </div>
+                          </div>
+      
+      
+      
+      
+      
+      
+      
+      
+                        </div>
+      
+                        <div class="form-group text-right">
+                          <button class="btn btn-primary btn-prev" type="button" data-target="frm-submit1">
+                            Previous
+                          </button>
+                          <button class="btn btn-primary btn-submit" type="submit" style="background-color:#7F141a;border-color:#7F141a;">
+                            Next
+                          </button>
+                          <button class="btn btn-primary loading-btn-submit" type="button" disabled style="display: none;">
+                            <i>
+                              Wait..
+                            </i>
+                          </button>
+                        </div>
+      
+      
+                      </div>
+                    </div>
+                    <div class="section-content step3">
+                      <h2>Step 3</h2>
+                      <div id="frm-submit3">
+                        <div class="alert alert-danger" id="frm-submit3-alert-danger" style="display: none;">
+                          <h4>
+                            <strong>
+                              Oops, something when wrong.
+                            </strong>
+                          </h4>
+                          <div id="frm-submit3-div-alert-danger">
+      
+                          </div>
+                        </div>
+      
+                        <div id="div-generate-inv">
+      
+                        </div>
+  
+                        <div class="form-group" style="display: nones;">
+                          <div class="text-info">
+                            Do you have a promo code? Please enter your promo code to get discount.
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <input type="text" name="promo-code-input" class="form-control" id="frm-submit3-promo-code-input">
+                              <input type="hidden" name="promo_code" id="frm-submit3-promo-code">
+                            </div>
+                            <div class="col-md-2" style="padding-left: 0px;">
+                              <button type="button" class="btn btn-danger" id="frm-submit3-btn-promo" data-action="<?= site_url('registration/proc_get_promo_code') ?>">
+                                Get
+                              </button>
+                              <button class="btn btn-danger" id="frm-submit3-loading-btn-promo" style="display: none;" disabled>
+                                <i>
+                                  Wait..
+                                </i>
+                              </button>
+                            </div>
+                          </div>
+      
+                        </div>
+                        <div class="form-group text-right">
+                          <button class="btn btn-primary btn-prev" type="button" data-target="frm-submit2">
+                            Previous
+                          </button>
+                          <button class="btn btn-primary btn-submit" type="submit" style="background-color:#7F141a;border-color:#7F141a;">
+                            Finish
+                          </button>
+                          <button class="btn btn-primary loading-btn-submit" type="button" disabled style="display: none;">
+                            <i>
+                              Wait..
+                            </i>
+                          </button>
+                        </div>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- progress-wrapper -->
+              </div>
+
+            </div>
+           </div>
+        </section>
+<!--Content-->
+</div>
+
+        <!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  
+          <div class="titleLogin text-center">
+            <img src="/img/logo_trekka.png" style="width:50px;">
+            <h3>SIGN IN</h3>
+          </div>
+  
+          <form action="/action_page.php">
+            
+            <div class="form-login">
+              <label for="email">Username or email</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-envelope"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+            </div>
+  
+            <div class="form-password mt-2">
+              <label for="pwd">Password</label>
+              <div class="input-group">
+                <span><i class="icon1 fa-solid fa-lock"></i></span>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+            </div>
+  
+            <div class="forgot-password mt-2">
+              <a href="#">
+                <p style="font-size:0.8rem">Forgot Password?</p>
+              </a>
+            </div>
+  
+          </form>
+          <div class="button-login mt-5 text-center">
+            <button type="button" class="btn" style="background-color: white;color: #05223d;" data-bs-toggle="modal" data-bs-target="#modalSignup" data-bs-dismiss="modal">Create Account</button>
+            <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d; min-width: 150px;">Login</button>
+          </div>
+  
+          <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        
+         </div>
+      </div>
+    </div>
+  </div>
+  
+<!--Modal Sign Up-->
+<div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="logo-signup" style="text-align:left"><img src="/img/logo_baru.png" style="width:100px;"></div>
+          </div>
+
+          <div class="col-6">
+            <div class="close" style="text-align:right"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+          
+        </div>
+
+        
+        <h3 class="text-center">SIGN UP</h3>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-firstname">
+                    <label for="uname">First Name</label>
+                    <input type="name" class="form-control" id="firstname" placeholder="Enter Firstname" name="firstname">
+                  </div>
+                </div>
+                <div class="col-lastname col-md-6">
+                  <div class="form-username">
+                    <label for="uname">Last Name</label>
+                    <input type="name" class="form-control" id="lastname" placeholder="Enter Lastname" name="lastname">
+                  </div>
+                </div>
+              </div>
+
+            <div class="select-jenisKelamin mt-2">
+              <label for="jenisKelamin">Gender</label>
+              <select class="form-select" aria-label="Select Jenis Kelamin">
+                <option selected>Select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+            </div>
+
+            <div class="form-lahir mt-2">
+              <label for="tanggalLahir">Birthday</label>
+              <input id="tanggalLahir" class="form-control" type="date"/>
+            </div>
+
+            <div class="select-negara mt-2">
+              <label for="negara">Country</label>
+              <select class="form-select" aria-label="Select Negara">
+                <option selected>Select</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Belanda</option>
+                <option value="1">Jepang</option>
+                <option value="2">Australia</option>
+              </select>
+            </div>
+
+
+            </div>
+            <div class="col-signup col-md-6 col-12">
+              <div class="form-username">
+                <label for="uname">Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Enter Username" name="uname">
+              </div>
+
+              <div class="form-email mt-2">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+
+              <div class="form-password mt-2">
+                <label for="pwd">Password</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+    
+              <div class="form-verif-password mt-2">
+                <label for="pwd2">Confirm Password</label>  
+                <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pwd2">
+              </div>
+            
+            </div>
+            
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-login mt-4 text-center">
+          <button type="button" class="btn btn-primary" style="background-color:#05223d;border-color:#05223d;">Create Account</button>
+        </div>
+
+        <p class="text-center mt-3" style="font-size:0.7rem">By proceeding, you accept our Terms of Service and Privacy Statement</p>
+        <p class="text-center mt-1" style="font-size:0.8rem">Already have an account?<a href="" data-bs-toggle="modal" data-bs-target="#modalLogin" data-bs-dismiss="modal"> Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-top text-white">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row" style="justify-content: center;">
+            <div class="col-4 col-md-2 mb-3">
+              <h5 style="font-weight: bold;">Info Expo</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Info Expo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Brand</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-4 col-md-2 mb-3">
+              <h5 style="font-weight: bold;">Pembicara</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Pembicara</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Ambasador</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-4 col-md-2 mb-3">
+              <h5 style="font-weight: bold;">Partner</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Partner</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Berita</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color: white!important">Kontak</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+            <p class="text-center">©Indonesia Running Expo 2025</p>
+          </div>
+        </footer>
+      </div>   
+  </div> 
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script type="text/javascript">
+
+      function myFunction() {
+            var input, filter, cards, cardContainer, h5, title, i;
+            input = document.getElementById("myFilter");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("myItems");
+            cards = cardContainer.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].querySelector(".card-body h5.card-title");
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+
+        $(".step").click(function () {
+          $(this).addClass("active").prevAll().addClass("active");
+          $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+          $("#line-progress").css("width", "13%");
+          $(".step1").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+          $("#line-progress").css("width", "53%");
+          $(".step2").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+          $("#line-progress").css("width", "100%");
+          $(".step3").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+    
+</body>
+</html>
